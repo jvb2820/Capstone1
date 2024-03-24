@@ -21,6 +21,17 @@ export default {
         extrabold: 800,
         black: 900,
       },
+      height: {
+        560: "520px",
+        444: "444px",
+      },
+      margin: {
+        "-px": "-1px",
+        "-2": "-0.5rem",
+        "-4": "-1rem",
+        "-8": "-2rem",
+        "-16": "-4rem",
+      },
     },
   },
   plugins: [daisyui],
