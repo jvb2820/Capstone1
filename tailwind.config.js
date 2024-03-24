@@ -24,6 +24,7 @@ export default {
       height: {
         560: "520px",
         444: "444px",
+        300: "230px",
       },
       margin: {
         "-px": "-1px",
@@ -31,6 +32,20 @@ export default {
         "-4": "-1rem",
         "-8": "-2rem",
         "-16": "-4rem",
+      },
+      borderWidth: {
+        10: "10px",
+      },
+      transitionDuration: {
+        300: "300ms", // You can add more durations if needed
+      },
+      transitionTimingFunction: {
+        "ease-in": "ease-in", // You can add more timing functions if needed
+      },
+      transform: {
+        transitionProperty: "transform",
+        transitionTimingFunction: "cubic-bezier(0.4, 0, 0.2, 1)",
+        transitionDuration: "300ms",
       },
     },
   },
