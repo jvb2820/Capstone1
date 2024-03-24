@@ -19,21 +19,21 @@ export default function LandingPage() {
           <span className="text-[#FDCC01]">AS</span>
         </div>
         <div className="relative z-10 justify-center flex flex-wrap flex-row text-center gap-10 font-secondary font-semibold text-black">
-          <div className="card min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-300 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
+          <div className="card rounded-radius-40 min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-100 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
             <div className="">APPLICANT</div>
           </div>
           <div>
-            <div className="card min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-300 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
+            <div className="card rounded-radius-40 min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-100 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
               <div className="">OFFICER</div>
             </div>
           </div>
           <div>
-            <div className="card min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-300 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
+            <div className="card rounded-radius-40 min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-100 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
               <div className="">TBI BOARD</div>
             </div>
           </div>
           <div>
-            <div className="card min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-300 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
+            <div className="card rounded-radius-40 min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-100 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
               <div className="">MANAGER</div>
             </div>
           </div>
