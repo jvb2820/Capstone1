@@ -21,11 +21,6 @@ export default {
         extrabold: 800,
         black: 900,
       },
-      height: {
-        560: "520px",
-        444: "444px",
-        300: "230px",
-      },
       margin: {
         "-px": "-1px",
         "-2": "-0.5rem",
@@ -48,7 +43,22 @@ export default {
         transitionDuration: "300ms",
       },
       borderRadius: {
-        'radius-40': '40px',
+        "radius-40": "40px",
+      },
+      width: {
+        960: "960px",
+        642: "542px",
+      },
+      height: {
+        560: "520px",
+        444: "444px",
+        300: "230px",
+        1080: "1080px",
+        722: "722px",
+        110: "110px",
+      },
+      backgroundColor: {
+        tanglow: "#FDCC01",
       },
     },
   },
