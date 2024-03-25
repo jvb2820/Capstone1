@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function LandingPage() {
   return (
     <>
@@ -6,7 +8,7 @@ export default function LandingPage() {
     fix image cover size
     add opacity to image 
     */}
-      <div className="md:bg-[url('../public/images/test.png')] md:bg-center md:bg-cover md:bg-local absolute md:h-560 md:min-w-full">
+      <div className="md:bg-[url('../public/images/test.png')] md:md:bg-center md:bg-cover md:bg-local absolute md:h-560 md:min-w-full">
         <div className="flex justify-center md:flex md:justify-start">
           <img
             className="cursor-pointer h-20 p-3 md:m-5 md:ml-20"
@@ -18,25 +20,28 @@ export default function LandingPage() {
           <span className="text-white">LOGIN</span>{" "}
           <span className="text-[#FDCC01]">AS</span>
         </div>
-        <div className="relative z-10 justify-center flex flex-wrap flex-row text-center gap-10 font-secondary font-semibold text-black">
-          <div className="card rounded-radius-40 min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-100 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
-            <div className="">APPLICANT</div>
-          </div>
-          <div>
+
+        <div className="text-lg relative z-10 justify-center flex flex-wrap flex-row text-center gap-10 font-secondary font-semibold text-50 text-black">
+          <Link to="/applicant">
+            <div className="card rounded-radius-40 min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-100 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
+              <div className="">APPLICANT</div>
+            </div>
+          </Link>
+          <Link to="/officer">
             <div className="card rounded-radius-40 min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-100 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
               <div className="">OFFICER</div>
             </div>
-          </div>
-          <div>
+          </Link>
+          <Link to="/tbiboard">
             <div className="card rounded-radius-40 min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-100 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
               <div className="">TBI BOARD</div>
             </div>
-          </div>
-          <div>
+          </Link>
+          <Link to="/manager">
             <div className="card rounded-radius-40 min-h-32 min-w-60 md:h-300 md:w-72  image-full items-center bg-[#EAEAEA]  md:hover:bg-[#FDCC01] hover:shadow-xl duration-100 ease-in cursor-pointer border-b-10 border-transparent transform hover:border-black hover:border-b-10">
               <div className="">MANAGER</div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <svg
