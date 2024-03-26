@@ -2,28 +2,55 @@ function TbiboardLogin() {
   return (
     <>
       <div className="self-center z-50 h-560 absolute inset-0 flex content-center items-center justify-center">
-        <div className="bg-tanglow h-full w-642 ">
-          <div className="flex flex-col items-center ">
+        <div className="bg-tanglow rounded-l-lg h-full w-642 ">
+          <div className="h-full justify-center flex flex-col items-center">
             <img
-              className=" m-20 h-110"
+              className="min-h-80 h-110"
               src="../public/images/wilBlackBox.png"
             />
           </div>
         </div>
-        <div className="bg-white h-full w-642 ">
-          <div className="flex flex-col items-center">
-            <h2 className="m-20">WELCOME APPLICANT!</h2>
-            <input
-              type="text"
-              placeholder="Username"
-              className="mt-4 input input-bordered w-full max-w-xs"
-            />
-            <input
-              type="text"
-              placeholder="Password"
-              className="mt-8 input input-bordered w-full max-w-xs"
-            />
-            <button className="mt-16 btn btn-neutral">Login</button>
+        <div className="bg-white rounded-r-lg h-full w-642 border-t-black">
+          <div className="flex flex-col items-center ">
+            <h2 className="font-primary text-black text-3xl m-20">
+              WELCOME MANAGER!
+            </h2>
+
+            <label
+              htmlFor="Username"
+              className="relative block rounded-md border border-black shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-6"
+            >
+              <input
+                type="text"
+                id="Username"
+                className="text-black rounded peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 h-12 w-80"
+                placeholder="Username"
+              />
+
+              <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                Username
+              </span>
+            </label>
+
+            <label
+              htmlFor="Password"
+              className="relative block rounded-md border border-black shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-6"
+            >
+              <input
+                type="text"
+                id="Password"
+                className="text-black rounded peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 h-12 w-80"
+                placeholder="Password"
+              />
+
+              <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                Password
+              </span>
+            </label>
+
+            <button className="hover:text-white font-secondary text-black bg-transparent h-12 w-60 mt-16 btn btn-neutral">
+              Login
+            </button>
           </div>
         </div>
       </div>
