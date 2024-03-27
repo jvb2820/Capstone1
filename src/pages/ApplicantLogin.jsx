@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function ApplicantLogin() {
   return (
     <>
@@ -12,9 +13,12 @@ function ApplicantLogin() {
             <p className="font-secondary text-black m-6">
               Dont have an account? Apply one!
             </p>
+
+            <Link to="/applicantform">
             <button className="hover:text-white font-secondary text-black bg-white mt-4 h-12 w-80 btn btn-neutral">
               Apply as Applicant
             </button>
+            </Link>
           </div>
         </div>
         <div className="bg-white rounded-r-lg h-full w-642 border-t-black">
@@ -55,9 +59,11 @@ function ApplicantLogin() {
               </span>
             </label>
 
+            <Link to="/applicantdashboard">
             <button className="hover:text-white font-secondary text-black bg-transparent h-12 w-60 mt-16 btn btn-neutral">
               Login
             </button>
+            </Link>
           </div>
         </div>
       </div>

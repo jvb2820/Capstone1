@@ -6,7 +6,8 @@ export default function LandingPage() {
       {/*
     pending:
     fix image cover size
-    add opacity to image 
+    add opacity to image
+    fix bg 
     */}
       <div className="md:bg-[url('../public/images/test.png')] md:bg-center md:bg-cover md:bg-local absolute md:h-560 md:min-w-full">
         <div className="flex justify-center md:flex md:justify-start">

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function OfficerLogin() {
   return (
     <>
@@ -47,10 +49,12 @@ function OfficerLogin() {
                 Password
               </span>
             </label>
-
+            
+            <Link to="/officerdashboard">
             <button className="hover:text-white font-secondary text-black bg-transparent h-12 w-60 mt-16 btn btn-neutral">
               Login
             </button>
+            </Link>
           </div>
         </div>
       </div>
