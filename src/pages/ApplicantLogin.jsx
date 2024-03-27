@@ -15,9 +15,9 @@ function ApplicantLogin() {
             </p>
 
             <Link to="/applicantform">
-            <button className="hover:text-white font-secondary text-black bg-white mt-4 h-12 w-80 btn btn-neutral">
-              Apply as Applicant
-            </button>
+              <button className="hover:text-white font-secondary text-black bg-white mt-4 h-12 w-80 btn btn-neutral">
+                Apply as Applicant
+              </button>
             </Link>
           </div>
         </div>
@@ -34,7 +34,7 @@ function ApplicantLogin() {
               <input
                 type="text"
                 id="Username"
-                className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 h-12 w-80"
+                className="peer border-none rounded-md bg-white placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 h-12 w-80"
                 placeholder="Username"
               />
 
@@ -50,7 +50,7 @@ function ApplicantLogin() {
               <input
                 type="text"
                 id="Password"
-                className="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 h-12 w-80"
+                className="peer border-none rounded-md bg-white placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 h-12 w-80"
                 placeholder="Password"
               />
 
@@ -59,11 +59,15 @@ function ApplicantLogin() {
               </span>
             </label>
 
-            <Link to="/applicantdashboard">
             <button className="hover:text-white font-secondary text-black bg-transparent h-12 w-60 mt-16 btn btn-neutral">
-              Login
+              <Link
+                to="/applicantdashboard"
+                className="border-2 border-rose-500 items-center w-full p-3"
+              >
+                {" "}
+                Login
+              </Link>
             </button>
-            </Link>
           </div>
         </div>
       </div>

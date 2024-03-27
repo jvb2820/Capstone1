@@ -15,7 +15,7 @@ function OfficerLogin() {
         <div className="bg-white rounded-r-lg h-full w-642 border-t-black">
           <div className="flex flex-col items-center ">
             <h2 className="font-primary text-black text-3xl m-20">
-              WELCOME MANAGER!
+              WELCOME OFFICER!
             </h2>
 
             <label
@@ -25,7 +25,7 @@ function OfficerLogin() {
               <input
                 type="text"
                 id="Username"
-                className="text-black rounded peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 h-12 w-80"
+                className="peer border-none rounded-md bg-white placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 h-12 w-80"
                 placeholder="Username"
               />
 
@@ -41,7 +41,7 @@ function OfficerLogin() {
               <input
                 type="text"
                 id="Password"
-                className="text-black rounded peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 h-12 w-80"
+                className="peer border-none rounded-md bg-white placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0 h-12 w-80"
                 placeholder="Password"
               />
 
@@ -49,12 +49,16 @@ function OfficerLogin() {
                 Password
               </span>
             </label>
-            
-            <Link to="/officerdashboard">
+
             <button className="hover:text-white font-secondary text-black bg-transparent h-12 w-60 mt-16 btn btn-neutral">
-              Login
+              <Link
+                to="/officerdashboard"
+                className="border-2 border-rose-500 items-center w-full p-3"
+              >
+                {" "}
+                Login
+              </Link>
             </button>
-            </Link>
           </div>
         </div>
       </div>

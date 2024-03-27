@@ -3,6 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-input {
+input,
+textarea {
   @apply indent-2;
+  @apply bg-white;
+}
+
+.applicant-form-textarea {
+  @apply indent-0;
+  @apply bg-white;
 }
