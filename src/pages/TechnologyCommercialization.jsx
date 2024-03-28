@@ -10,6 +10,7 @@ export default function TechnologyCommercialization() {
         veritatis accusantium. Atque, voluptas dolorum dolor itaque, nesciunt
         harum repellat ex cum adipisci modi debitis.
       </p>
+      <br />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dolore.
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
