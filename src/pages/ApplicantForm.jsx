@@ -42,13 +42,13 @@ export default function ApplicantForm() {
             Registration Form
             <ul>
               <li>
-                <a>I. text1</a>
+                <a href="#capsuleProposal">I. text1</a>
               </li>
               <li>
-                <a>II. text2</a>
+                <a href="#aboutProposedAcceleration">II. text2</a>
               </li>
               <li>
-                <a>III. text3</a>
+                <a href="#cvProjectLeader">III. text3</a>
               </li>
             </ul>
           </div>
@@ -106,11 +106,21 @@ export default function ApplicantForm() {
               <br />
             </label>
             <div className="border-4 border-green-500">
-              <CapsuleProposal />
+              <div className="border-4 border-green-500" id="capsuleProposal">
+                <CapsuleProposal />
+              </div>
               <br />
-              <AboutProposedAcceleration />
+              <div
+                className="border-4 border-green-500"
+                id="aboutProposedAcceleration"
+              >
+                <AboutProposedAcceleration />
+              </div>
               <br />
-              <CvProjectLeader />
+              <div className="border-4 border-green-500" id="cvProjectLeader">
+                <CvProjectLeader />
+              </div>
+
               <br />
               <div className="border-2 border-red-500">
                 <p>
