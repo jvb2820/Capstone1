@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import LandingPage from "./LandingPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ApplicantLogin from "./pages/ApplicantLogin";
+import OfficerLogin from "./pages/OfficerLogin";
+import TbiboardLogin from "./pages/TbiboardLogin";
+import ManagerLogin from "./pages/ManagerLogin";
+import ApplicantDashboard from "./pages/ApplicantDashboard";
+import ApplicantForm from "./pages/ApplicantForm";
+import ManagerDashboard from "./pages/ManagerDashboard";
+import OfficerDashboard from "./pages/OfficerDashboard";
+import TbiboardDashboard from "./pages/TbiboardDashboard";
+import CapsuleProposal from "./pages/CapsuleProposal";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/applicant" element={<ApplicantLogin />} />
+        <Route path="/officer" element={<OfficerLogin />} />
+        <Route path="/tbiboard" element={<TbiboardLogin />} />
+        <Route path="/manager" element={<ManagerLogin />} />
+        <Route path="/applicantdashboard" element={<ApplicantDashboard />} />
+        <Route path="/applicantform" element={<ApplicantForm />} />
+        <Route path="/managerdashboard" element={<ManagerDashboard />} />
+        <Route path="/officerdashboard" element={<OfficerDashboard />} />
+        <Route path="/tbiboarddashboard" element={<TbiboardDashboard />} />
+        <Route path="/capsuleProposal" element={<CapsuleProposal />} />
+      </Routes>
+    </Router>
+  );
 }
-
-export default App
