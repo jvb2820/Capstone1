@@ -27,6 +27,7 @@ export default {
         "-4": "-1rem",
         "-8": "-2rem",
         "-16": "-4rem",
+        testmargin: "900px",
       },
       borderWidth: {
         10: "10px",
@@ -59,6 +60,9 @@ export default {
       },
       backgroundColor: {
         tanglow: "#FDCC01",
+      },
+      screens: {
+        xl: "1310px",
       },
     },
   },

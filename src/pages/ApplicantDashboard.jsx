@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 export default function ApplicantDashboard() {
   return (
     <>
-      <div className="h-screen bg-white flex-col md:flex-row flex justify-between">
+      <div className="h-screen bg-white flex-col md:flex-row flex justify-between relative">
         <div className="order-2 md:order-1">
           <h2>APPLICATION STATUS</h2>
           <p>Failed</p>
@@ -28,6 +30,9 @@ export default function ApplicantDashboard() {
         <div className="order-1 md:order-3">
           <h2>WELCOME USER</h2>
           <p>ID:123</p>
+        </div>
+        <div className="border-2 border-rose-500 absolute bottom-0 right-0">
+          <Link to="/applicant">logout</Link>
         </div>
       </div>
     </>

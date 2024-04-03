@@ -3,6 +3,7 @@ import "../index.css";
 import CapsuleProposal from "./CapsuleProposal";
 import AboutProposedAcceleration from "./AboutProposedAcceleration";
 import CvProjectLeader from "./CvProjectLeader";
+import { Link } from "react-router-dom";
 
 export default function ApplicantForm() {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,23 +37,29 @@ export default function ApplicantForm() {
 
   return (
     <>
-      <div className="bg-rose border-2 border-rose-500">
-        <div className="p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full">
-          <div className=" border-2 border-green-500 lg:fixed hidden lg:block text-black lg:right-40 lg:pr-20">
-            Registration Form
-            <ul>
-              <li>
-                <a href="#capsuleProposal">I. text1</a>
-              </li>
-              <li>
-                <a href="#aboutProposedAcceleration">II. text2</a>
-              </li>
-              <li>
-                <a href="#cvProjectLeader">III. text3</a>
-              </li>
-            </ul>
-          </div>
-          <div className="b-20 w-9/12 bg-white">
+      <div className="bg-slate-300 border-2 border-rose-500 flex md:flex-row-reverse w-full">
+        {/* <div className="z-50 border-2 border-green-500 xl:fixed xl:block text-black right-0 hidden w-96 pt-20"> */}
+        <div className="border-2 border-green-500 text-black pt-20 md:w-3/12 md:fixed md:block hidden">
+          Registration Form
+          <ul>
+            <li>
+              <a href="#capsuleProposal">I. Launchlab Capsule Proposal</a>
+            </li>
+            <li>
+              <a href="#aboutProposedAcceleration">
+                II. About the Proposed Acceleration
+              </a>
+            </li>
+            <li>
+              <a href="#cvProjectLeader">III. Curriculum Vitae</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="border-2 border-red-500 w-full p-20">
+          {/* <div className="border-4 border-red-500 bg-rose p-10 sm:p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full"> */}
+          {/* <div className="border-4 border-pink-500 w-full xl:w-9/12 bg-white mr-96"> */}
+          <div className="border-4 border-pink-500 bg-white md:w-9/12">
             <img
               src="../public/images/wilBlackBox.png"
               className="h-20 ml-auto"
@@ -138,8 +145,9 @@ export default function ApplicantForm() {
               <button className="right-0 btn btn-neutral">Neutral</button>
             </div>
           </div>
-          <div className="flex justify-center border-2 border-red-500">
-            Already Applied? Login
+          <div className="bottom-0 border-2 border-red-500 flex justify-center">
+            Already Applied?
+            <Link to="/applicant">Login</Link>
           </div>
         </div>
         <div className="bg-transparent text-white py-4 px-8 flex justify-end items-center fixed bottom-0 w-full z-50">
