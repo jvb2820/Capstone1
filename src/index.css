@@ -13,7 +13,6 @@ textarea {
   @apply indent-0;
   @apply bg-white;
 }
-
 /* 
 .animate-bounce {
   animation: bounce 0.5s;

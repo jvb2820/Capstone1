@@ -3,29 +3,38 @@ import { Link } from "react-router-dom";
 export default function TbiboardDashboard() {
   return (
     <>
-      <div className="h-screen bg-white  flex justify-start items-center flex-col justify-items-center text-center">
-        <div>
-          <h1 className="border-2 border-green-500">
-            RECOMMENDED FROM MANAGER
-          </h1>
+      <div className="pt-32 h-screen bg-white  flex justify-start items-center flex-col justify-items-center text-center">
+        <div className="border-2 border-green-500 p-5">
+          <h1 className="text-xl mb-2 text-center">RECOMMENDED FROM MANAGER</h1>
         </div>
         {/* Apply overflow-x-scroll to the div containing the table */}
-        <div className="border-2 border-rose-500 overflow-x-scroll w-9/12">
+        <div className="border-4 border-red-500 bg-rose-100 rounded-lg shadow w-9/12">
           <table className="w-full border-collapse">
             <thead>
               <tr>
-                <th className="border border-gray-500 px-4 py-2" colSpan={2}>
+                <th
+                  className="bg-gray-50 border-b-2 border-gray-200 p-4  "
+                  colSpan={2}
+                >
                   asdf
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-500 px-4 py-2">
-                  ssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+                <td className="text-sm whitespace-nowrap p-8 ">asdfasdfsdf</td>
+                <td className="w-1/5">
+                  <button className="btn btn-neutral w-10/12  mr-20">
+                    Evaluate
+                  </button>
                 </td>
-                <td className="border border-gray-500 px-4 py-2">
-                  <button className="btn btn-neutral">Evaluate</button>
+              </tr>
+              <tr>
+                <td className="text-sm whitespace-nowrap p-8 ">asdfasdfsdf</td>
+                <td className="w-1/5">
+                  <button className="btn btn-neutral w-10/12  mr-20">
+                    Evaluate
+                  </button>
                 </td>
               </tr>
             </tbody>
