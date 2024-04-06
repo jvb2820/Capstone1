@@ -2,30 +2,32 @@ import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { GoPersonFill } from "react-icons/go";
-// import MListOfApplicants from "./MListOfApplicants";
+import MListOfApplicants from "./MListOfApplicants";
 
+import MOperationsOfficer from "./MOperationsOfficer";
+import MTbiBoardEvaluation from "./MTbiBoardEvaluation";
 export default function ManagerDashboard() {
   const menus = [
     {
       name: "List of Applicants",
-      link: "#",
+      // link: "/mlistofapplicants",
       icon: GoPersonFill,
-      //   component: MListOfApplicants,
+      component: MListOfApplicants,
     },
     {
       name: "Operations Officer Eval Results",
-      link: "#",
-      //   component: MListOfApplicants,
+      // link: "/moperationsOfficer",
       icon: GoPersonFill,
+      component: MOperationsOfficer, // Replace with your component
     },
     {
       name: "TBI Board Evaluation",
-      link: "#",
-      //   component: MListOfApplicants,
+      // link: "/mtbiBoardEvaluation",
       icon: GoPersonFill,
+      component: MTbiBoardEvaluation, // Replace with your component
     },
   ];
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState("");
 
   const handleMenuClick = (menuName) => {
@@ -34,7 +36,7 @@ export default function ManagerDashboard() {
 
   return (
     <>
-      <div className="flex bg-gray-600 w-full border-2 border-rose-500">
+      <div className="flex bg-gray-600 w-full ">
         <div
           className={`bg-slate-700 min-h-screen  border-2 border-rose-500 ${
             open ? "w-80" : "w-16"
@@ -92,7 +94,25 @@ export default function ManagerDashboard() {
             <Link to="/manager">Logout</Link>
           </div>
         </div>
-        <div className="border-2 border-rose-50">display ari table</div>
+        {/* <div className=" w-screen h-screen border-2 border-green-500">
+          <Routes>
+            {menus.map((menu, index) => (
+              <Route
+                key={index}
+                path={menu.link}
+                element={<menu.component />}
+              />
+            ))}
+          </Routes>
+        </div> */}
+        <div className="w-full">
+          <div className="border-2 border-green-500 h-screen">
+            <div>hello manager</div>
+            {menus.map((menu, index) =>
+              activeMenu === menu.name ? <menu.component key={index} /> : null
+            )}
+          </div>
+        </div>
       </div>
     </>
   );

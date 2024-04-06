@@ -11,6 +11,8 @@ import OfficerDashboard from "./pages/OfficerDashboard";
 import TbiboardDashboard from "./pages/TbiboardDashboard";
 import CapsuleProposal from "./pages/CapsuleProposal";
 import MListOfApplicants from "./pages/MListOfApplicants";
+import MOperationsOfficer from "./pages/MOperationsOfficer";
+import MTbiBoardEvaluation from "./pages/MTbiBoardEvaluation";
 
 export default function App() {
   return (
@@ -28,8 +30,8 @@ export default function App() {
         <Route path="/tbiboarddashboard" element={<TbiboardDashboard />} />
         <Route path="/capsuleProposal" element={<CapsuleProposal />} />
         <Route path="/mlistofapplicants" element={<MListOfApplicants />} />
-        <Route path="/moperationsOfficer" element={<MListOfApplicants />} />
-        <Route path="/mtbiBoardEvaluation" element={<MListOfApplicants />} />
+        <Route path="/moperationsOfficer" element={<MOperationsOfficer />} />
+        <Route path="/mtbiBoardEvaluation" element={<MTbiBoardEvaluation />} />
       </Routes>
     </Router>
   );
