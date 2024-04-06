@@ -107,7 +107,9 @@ export default function ManagerDashboard() {
         </div> */}
         <div className="w-full">
           <div className="border-2 border-green-500 h-screen">
-            <div>hello manager</div>
+            <div className="font-primary text-black text-5xl m-20">
+              WELCOME MANAGER!
+            </div>
             {menus.map((menu, index) =>
               activeMenu === menu.name ? <menu.component key={index} /> : null
             )}

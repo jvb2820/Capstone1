@@ -7,7 +7,7 @@ function ManagerLogin() {
         <div className="bg-tanglow rounded-l-lg h-full w-642 ">
           <div className="h-full justify-center flex flex-col items-center">
             <img
-              className="min-h-80 h-110"
+              className="min-h-72 h-110"
               src="../public/images/wilBlackBox.png"
             />
           </div>
