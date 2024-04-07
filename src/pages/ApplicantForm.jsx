@@ -35,23 +35,47 @@ export default function ApplicantForm() {
     };
   }, []);
 
+  const smoothScrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        behavior: "smooth",
+        top: element.offsetTop,
+      });
+    }
+  };
   return (
     <>
       <div className="bg-slate-300  border-2 border-rose-500 flex md:flex-row-reverse w-full">
         {/* <div className="z-50 border-2 border-green-500 xl:fixed xl:block text-black right-0 hidden w-96 pt-20"> */}
-        <div className=" font-secondary font-normal border-2  border-green-500 text-black pt-20 md:w-3/12 md:fixed md:block hidden">
+        <div className="font-secondary font-normal border-2  border-green-500 text-black pt-20 md:w-3/12 md:fixed md:block hidden">
           Registration Form
           <ul>
             <li>
-              <a href="#capsuleProposal">I. Launchlab Capsule Proposal</a>
+              <a
+                onClick={() => smoothScrollToSection("capsuleProposal")}
+                className="cursor-pointer"
+              >
+                I. Launchlab Capsule Proposal
+              </a>
             </li>
             <li>
-              <a href="#aboutProposedAcceleration">
+              <a
+                onClick={() =>
+                  smoothScrollToSection("aboutProposedAcceleration")
+                }
+                className="cursor-pointer"
+              >
                 II. About the Proposed Acceleration
               </a>
             </li>
             <li>
-              <a href="#cvProjectLeader">III. Curriculum Vitae</a>
+              <a
+                onClick={() => smoothScrollToSection("cvProjectLeader")}
+                className="cursor-pointer"
+              >
+                III. Curriculum Vitae
+              </a>
             </li>
           </ul>
         </div>

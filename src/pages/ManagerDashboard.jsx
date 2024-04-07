@@ -36,9 +36,9 @@ export default function ManagerDashboard() {
 
   return (
     <>
-      <div className="flex bg-gray-600 w-full ">
+      <div className="  flex bg-gray-600 w-full">
         <div
-          className={`bg-slate-700 min-h-screen  border-2 border-rose-500 ${
+          className={`bg-slate-700 min-h-screen ${
             open ? "w-80" : "w-16"
           } duration-500 text-gray-100 flex flex-col justify-between`}
         >
@@ -105,8 +105,8 @@ export default function ManagerDashboard() {
             ))}
           </Routes>
         </div> */}
-        <div className="w-full">
-          <div className="border-2 border-green-500 h-screen">
+        <div className="w-w80">
+          <div className="">
             <div className="font-primary text-black text-5xl m-20">
               WELCOME MANAGER!
             </div>

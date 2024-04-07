@@ -49,6 +49,7 @@ export default {
       width: {
         960: "960px",
         642: "542px",
+        w80: "80%",
       },
       height: {
         560: "520px",
