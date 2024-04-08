@@ -107,7 +107,7 @@ export default function MListOfApplicants() {
             />
           </div>
         </div>
-        <div className="">
+        <div className="w-11/12">
           <div className=" test1 rounded-t-lg">
             <table className=" max-w-screen-lg min-w-full divide-y divide-gray-200 bg-white text-sm text-left">
               <thead className="ltr:text-left rtl:text-right">
