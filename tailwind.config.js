@@ -62,6 +62,16 @@ export default {
       backgroundColor: {
         tanglow: "#FDCC01",
       },
+      colors: {
+        formbg: {
+          dark: "#D3AC09",
+          light: "#E9D790",
+        },
+      },
+      abg: {
+        darklow: "D3AC09",
+        light: "E9D790",
+      },
       screens: {
         xl: "1310px",
       },

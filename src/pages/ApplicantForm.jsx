@@ -46,12 +46,12 @@ export default function ApplicantForm() {
   };
   return (
     <>
-      <div className="bg-slate-300  border-2 border-rose-500 flex md:flex-row-reverse w-full">
+      <div className="bg-gradient-to-r from-formbg-dark to-formbg-light flex md:flex-row-reverse w-full">
         {/* <div className="z-50 border-2 border-green-500 xl:fixed xl:block text-black right-0 hidden w-96 pt-20"> */}
-        <div className="font-secondary font-normal border-2  border-green-500 text-black pt-20 md:w-3/12 md:fixed md:block hidden">
-          Registration Form
+        <div className="font-secondary font-normal text-black pt-20 md:w-3/12 md:fixed md:block hidden">
+          <div className="mb-4 font-semibold">Registration Form</div>
           <ul>
-            <li>
+            <li className="mb-4 ml-2 hover:text-white">
               <a
                 onClick={() => smoothScrollToSection("capsuleProposal")}
                 className="cursor-pointer"
@@ -59,7 +59,7 @@ export default function ApplicantForm() {
                 I. Launchlab Capsule Proposal
               </a>
             </li>
-            <li>
+            <li className="mb-4 ml-2 hover:text-white">
               <a
                 onClick={() =>
                   smoothScrollToSection("aboutProposedAcceleration")
@@ -69,7 +69,7 @@ export default function ApplicantForm() {
                 II. About the Proposed Acceleration
               </a>
             </li>
-            <li>
+            <li className="mb-4 ml-2 hover:text-white">
               <a
                 onClick={() => smoothScrollToSection("cvProjectLeader")}
                 className="cursor-pointer"
@@ -80,15 +80,15 @@ export default function ApplicantForm() {
           </ul>
         </div>
 
-        <div className="border-2  border-red-500 w-full p-20">
+        <div className="w-full p-20">
           {/* <div className="border-4 border-red-500 bg-rose p-10 sm:p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full"> */}
           {/* <div className="border-4 border-pink-500 w-full xl:w-9/12 bg-white mr-96"> */}
-          <div className="border-2 rounded-lg border-black bg-white md:w-9/12">
+          <div className="border rounded-lg border-black bg-white md:w-9/12">
             <img
               src="../public/images/wilBlackBox.png"
               className="h-20 ml-auto mr-4 mt-4"
             />
-            <div className="flex items-center">
+            <div className="flex flex-col md:flex-row items-center">
               <img
                 src="../public/images/launchlab.png"
                 className="w-64 h-20 align-middles mb-8 -mt-8"
@@ -97,30 +97,29 @@ export default function ApplicantForm() {
                 Registration Form
               </h1>
             </div>
-            <p className="font-secondary mb-8 ml-6 text-black mr-8">
+            <p className="font-secondary mb-8 ml-6 text-black mr-6">
               Thank you for your interest in participating the LaunchLab Program
               of DASIG. This program is spearheaded by CIT-U Wildcat Innovation
               Labs. Please complete the following form to submit your capsule
               proposal for consideration.
             </p>
-            <hr />
-            <label
-              htmlFor="UserEmail"
-              className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
-            >
-              <h2 className="font-secondary text-black mt-8 mb-6 ml-6">
-                Email
-              </h2>
+            <div className="ml-6 mt-14">
+              <label
+                htmlFor="UserEmail"
+                className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
+              >
+                <h2 className="font-secondary text-black mb-6">Email</h2>
 
-              <input
-                type="email"
-                id="UserEmail"
-                placeholder="Enter your email here"
-                className="font-secondary w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-8 ml-6"
-              />
-              <br />
-            </label>
-            <hr />
+                <input
+                  type="email"
+                  id="UserEmail"
+                  placeholder="Enter your email here"
+                  className="font-secondary text-black w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-14"
+                />
+                <br />
+              </label>
+              <hr />
+            </div>
             <p className="font-secondary text-black mt-8 mb-8 ml-6 mr-8">
               By accomplishing this form, the following personal information
               will be collected including, startup team members names, personal
@@ -177,70 +176,101 @@ export default function ApplicantForm() {
               from any complaint, suit, or damages which any party may file or
               claim in relation to my consent.
             </p>
-            <input type="radio" name="radio-1" className="radio" checked />
-            <input type="radio" name="radio-1" className="radio" />
+            <div className="flex flex-col items-start">
+              <label className="mt-8 ml-6 mb-8 flex items-center">
+                <input
+                  type="radio"
+                  name="radio-1"
+                  value="I AGREE"
+                  className="radio"
+                  checked
+                />
+                <span className="text-black font-secondary ml-4">I AGREE</span>
+              </label>
+              <label className="ml-6 mb-8 flex items-center">
+                <input
+                  type="radio"
+                  name="radio-1"
+                  value="I DO NOT AGREE"
+                  className="radio"
+                />
+                <span className="text-black font-secondary ml-4">
+                  I DO NOT AGREE
+                </span>
+              </label>
+            </div>
             <hr />{" "}
-            <label
-              htmlFor="UserEmail"
-              className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
-            >
-              <h2>Project Title</h2>
+            <div className="ml-6">
+              <label
+                htmlFor="UserEmail"
+                className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
+              >
+                <h2 className="font-secondary text-black mt-16 mb-6">
+                  Project Title/Startup Name
+                </h2>
 
-              <input
-                type="text"
-                id="UserEmail"
-                placeholder="Enter your project title here"
-                className="w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm"
-              />
-              <br />
-            </label>
-            <div className="border-4 border-green-500">
-              <div className="border-4 border-green-500" id="capsuleProposal">
+                <input
+                  type="text"
+                  id="UserEmail"
+                  placeholder="Enter your project title here"
+                  className="font-secondary text-black w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-14"
+                />
+                <br />
+              </label>
+            </div>
+            <div className="">
+              <div className="0" id="capsuleProposal">
                 <CapsuleProposal />
               </div>
               <br />
-              <div
-                className="border-4 border-green-500"
-                id="aboutProposedAcceleration"
-              >
+              <div className="" id="aboutProposedAcceleration">
                 <AboutProposedAcceleration />
               </div>
               <br />
-              <div className="border-4 border-green-500" id="cvProjectLeader">
+              <div className="" id="cvProjectLeader">
                 <CvProjectLeader />
               </div>
 
               <br />
-              <div className="border-2 border-red-500">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore, ut!
+              <div className="font-secondary text-black ml-6 mr-6">
+                <p className="mb-6">
+                  Thank you for taking the time to complete the registration. We
+                  understand and respect your concerns.
                 </p>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores quasi unde perspiciatis magni veritatis pariatur
-                  accusamus ipsam mollitia dolore dolorem.
+                  If you have further questions and concerns , you are welcome
+                  to contact our project lead, Engr. Jurydel Rama, at{" "}
+                  <a
+                    href="mailto:jurydel.rama@cit.edu"
+                    className="font-bold text-blue-700"
+                  >
+                    jurydel.rama@cit.edu
+                  </a>
                 </p>
               </div>
             </div>
-            <div className="border-2 border-red-500 justify-end flex">
-              <button className="right-0 btn btn-neutral">Neutral</button>
+            <div className="justify-end flex mt-16 mb-6 mr-6">
+              <button className="bg-tanglow text-black hover:bg-black hover:text-white font-secondary font-medium right-0 rounded btn-neutral border-b-2 border-black border-solid border-opacity-100 w-36 h-12">
+                Submit
+              </button>
             </div>
           </div>
-          <div className="bottom-0 border-2 border-red-500 flex justify-center">
-            Already Applied?
-            <Link to="/applicant">Login</Link>
+          <div className="font-secondary text-black bottom-0 flex justify-center mt-8">
+            Already Applied? <span className="mr-2"></span>
+            <Link to="/applicant" className="font-semibold">
+              Login
+            </Link>
           </div>
         </div>
         <div className="bg-transparent text-white py-4 px-8 flex justify-end items-center fixed bottom-0 w-full z-50">
           {isVisible && (
             <button
               onClick={smoothScrollToTop}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+              className="bg-tanglow hover:bg-black text-white font-bold w-12 h-12 rounded focus:outline-none focus:shadow-outline flex items-center justify-center border-b-2 border-black"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 inline-block mr-1"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
