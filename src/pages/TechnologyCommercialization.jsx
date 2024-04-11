@@ -1,6 +1,6 @@
 export default function TechnologyCommercialization() {
   return (
-    <div className="mt-14">
+    <div className="mt-14 mb-14">
       <h2 className="font-semibold mb-8">
         Technology and Commercialization Readiness Level
       </h2>

@@ -9,20 +9,19 @@ export default function CvProjectLeader() {
         <h2 className="font-semibold mb-8">
           III. Curriculum Vitae of the Project Leader
         </h2>
-        <div className="">
-          <label className="form-control w-full max-w-xs">
-            <div className="label">
-              {/* <span className="label-text">Pick a file</span>
-                    <span className="label-text-alt">Alt asd</span> */}
-            </div>
-            <input
-              type="file"
-              className="file-input file-input-bordered w-full max-w-xs"
-            />
-            <div className="label">
-              <span className="label-text-alt">Alt label</span>
-              <span className="label-text-alt">Alt label</span>
-            </div>
+        <div className="relative my-6 inline-flex sm:w-96 w-full items-center gap-2 rounded border border-slate-200 text-sm text-slate-500">
+          <input
+            id="file-upload"
+            name="file-upload"
+            type="file"
+            className="peer order-2 [&::file-selector-button]:hidden"
+          />
+          <label
+            htmlFor="file-upload"
+            className="inline-flex h-10 cursor-pointer items-center justify-center gap-2 whitespace-nowrap rounded bg-black border border-black px-6 text-sm font-medium tracking-wide text-white transition duration-300 hover:bg-tanglow hover:border-tanglow hover:text-black focus-visible:outline-none"
+          >
+            {" "}
+            Upload a file{" "}
           </label>
         </div>
         <hr />

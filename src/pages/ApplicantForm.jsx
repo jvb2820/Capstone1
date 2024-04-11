@@ -46,12 +46,12 @@ export default function ApplicantForm() {
   };
   return (
     <>
-      <div className="bg-slate-300  border-2 border-rose-500 flex md:flex-row-reverse w-full">
+      <div className="bg-gradient-to-r from-formbg-dark to-formbg-light flex md:flex-row-reverse w-full">
         {/* <div className="z-50 border-2 border-green-500 xl:fixed xl:block text-black right-0 hidden w-96 pt-20"> */}
-        <div className="font-secondary font-normal border-2  border-green-500 text-black pt-20 md:w-3/12 md:fixed md:block hidden">
-          Registration Form
+        <div className="font-secondary font-normal text-black pt-20 md:w-3/12 md:fixed md:block hidden">
+          <div className="mb-4 font-semibold">Registration Form</div>
           <ul>
-            <li>
+            <li className="mb-4 ml-2 hover:text-white">
               <a
                 onClick={() => smoothScrollToSection("capsuleProposal")}
                 className="cursor-pointer"
@@ -59,7 +59,7 @@ export default function ApplicantForm() {
                 I. Launchlab Capsule Proposal
               </a>
             </li>
-            <li>
+            <li className="mb-4 ml-2 hover:text-white">
               <a
                 onClick={() =>
                   smoothScrollToSection("aboutProposedAcceleration")
@@ -69,7 +69,7 @@ export default function ApplicantForm() {
                 II. About the Proposed Acceleration
               </a>
             </li>
-            <li>
+            <li className="mb-4 ml-2 hover:text-white">
               <a
                 onClick={() => smoothScrollToSection("cvProjectLeader")}
                 className="cursor-pointer"
@@ -80,15 +80,15 @@ export default function ApplicantForm() {
           </ul>
         </div>
 
-        <div className="border-2  border-red-500 w-full p-20">
+        <div className="w-full p-20">
           {/* <div className="border-4 border-red-500 bg-rose p-10 sm:p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full"> */}
           {/* <div className="border-4 border-pink-500 w-full xl:w-9/12 bg-white mr-96"> */}
-          <div className="border-2 rounded-lg border-black bg-white md:w-9/12">
+          <div className="border rounded-lg border-black bg-white md:w-9/12">
             <img
               src="../public/images/wilBlackBox.png"
               className="h-20 ml-auto mr-4 mt-4"
             />
-            <div className="flex items-center">
+            <div className="flex flex-col md:flex-row items-center">
               <img
                 src="../public/images/launchlab.png"
                 className="w-64 h-20 align-middles mb-8 -mt-8"
@@ -103,24 +103,23 @@ export default function ApplicantForm() {
               Labs. Please complete the following form to submit your capsule
               proposal for consideration.
             </p>
-            <hr />
-            <label
-              htmlFor="UserEmail"
-              className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
-            >
-              <h2 className="font-secondary text-black mt-8 mb-6 ml-6">
-                Email
-              </h2>
+            <div className="ml-6 mt-14">
+              <label
+                htmlFor="UserEmail"
+                className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
+              >
+                <h2 className="font-secondary text-black mb-6">Email</h2>
 
-              <input
-                type="email"
-                id="UserEmail"
-                placeholder="Enter your email here"
-                className="font-secondary w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-8 ml-6"
-              />
-              <br />
-            </label>
-            <hr />
+                <input
+                  type="email"
+                  id="UserEmail"
+                  placeholder="Enter your email here"
+                  className="font-secondary text-black w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-14"
+                />
+                <br />
+              </label>
+              <hr />
+            </div>
             <p className="font-secondary text-black mt-8 mb-8 ml-6 mr-8">
               By accomplishing this form, the following personal information
               will be collected including, startup team members names, personal
@@ -201,22 +200,24 @@ export default function ApplicantForm() {
               </label>
             </div>
             <hr />{" "}
-            <label
-              htmlFor="UserEmail"
-              className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
-            >
-              <h2 className="font-secondary text-black mt-16 mb-6 ml-6">
-                Project Title
-              </h2>
+            <div className="ml-6">
+              <label
+                htmlFor="UserEmail"
+                className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
+              >
+                <h2 className="font-secondary text-black mt-16 mb-6">
+                  Project Title/Startup Name
+                </h2>
 
-              <input
-                type="text"
-                id="UserEmail"
-                placeholder="Enter your project title here"
-                className="font-secondary w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-14 ml-6"
-              />
-              <br />
-            </label>
+                <input
+                  type="text"
+                  id="UserEmail"
+                  placeholder="Enter your project title here"
+                  className="font-secondary text-black w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-14"
+                />
+                <br />
+              </label>
+            </div>
             <div className="">
               <div className="0" id="capsuleProposal">
                 <CapsuleProposal />

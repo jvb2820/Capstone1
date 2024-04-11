@@ -1,6 +1,6 @@
 export default function CapsuleProposal() {
   return (
-    <div className="font-secondary text-black ml-6 mr-6">
+    <div className="font-secondary text-black ml-6 mr-6 mt-10">
       <h2 className="font-semibold">I. Fill up Launchlab Capsule Proposal</h2>
       <div className="mt-2">
         <p className="mb-4">A. Startup/Project Description</p>
@@ -222,7 +222,7 @@ export default function CapsuleProposal() {
           </div>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 overflow-x-auto">
         <p className="mb-4">E. Competitive Advantage Analysis</p>
         <div>
           <p className="text-gray-500">
