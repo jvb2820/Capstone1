@@ -7,7 +7,7 @@ function TbiboardLogin() {
         <div className="bg-tanglow rounded-l-lg h-full w-642 ">
           <div className="h-full justify-center flex flex-col items-center">
             <img
-              className="min-h-80 h-110"
+              className="min-h-72 h-110"
               src="../public/images/wilBlackBox.png"
             />
           </div>
@@ -50,10 +50,10 @@ function TbiboardLogin() {
               </span>
             </label>
 
-            <button className="hover:text-white font-secondary text-black bg-transparent h-12 w-60 mt-16 btn btn-neutral">
+            <button className="hover:text-white font-secondary text-black bg-transparent h-12 w-60 mt-16 btn btn-neutral ">
               <Link
                 to="/tbiboarddashboard"
-                className="border-2 border-rose-500 items-center w-full p-3"
+                className=" items-center w-full p-3"
               >
                 {" "}
                 Login

@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 
-export default function OfficerDashboard() {
+export default function MTbiBoardEvaluation() {
   // Assuming you have a function to fetch data from the backend
   const fetchData = async () => {
     // Perform fetch request to get applicant data
@@ -19,12 +18,19 @@ export default function OfficerDashboard() {
   // Sample data structure assuming data fetched from the backend
   const [data, setData] = useState([
     {
+      id: 123,
+      status: "aaa",
       email: "email@gmail.com",
       // Add other properties here
     },
     // Add more applicant objects as needed
   ]);
+
+  // Define column titles
+  // Define column titles
   const columnTitles = [
+    { key: "id", title: "Id" },
+    { key: "status", title: "Status" },
     { key: "email", title: "Email" },
     { key: "project_title", title: "Project Title/Startup Name" },
     { key: "startup_description", title: "Startup Description" },
@@ -70,27 +76,55 @@ export default function OfficerDashboard() {
       title: "Applicant Commitment Verification Form",
     },
   ];
+
   return (
     <>
-      {/* <div className="border-2 border-rose-500 h-screen bg-white flex justify-start items-center flex-col justify-items-center text-center w-screen"> */}
-      {/* <div> */}
-      <div className="pt-32 h-screen bg-white  flex justify-start items-center flex-col justify-items-center text-center">
-        <div className="p-5">
-          <h1 className="text-xl mb-2 text-center text-black">
-            REVIEW APPLICANT DOCUMENTS
-          </h1>
-        </div>
+      <div className="rounded-lg  border-gray-200 w-11/12">
+        <div>tbiboard evaluation results</div>
+        <div className="mt-6 md:flex md:items-center md:justify-between">
+          <div className="relative flex items-center mt-4 md:mt-0">
+            <span className="absolute">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-5 h-5 mx-3 text-gray-400 dark:text-gray-600"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                />
+              </svg>
+            </span>
 
-        {/* Apply overflow-x-scroll to the div containing the table */}
-        {/* <div className="border-2 border-green-500 overflow-x-scroll w-9/12"> */}
+            <input
+              type="text"
+              placeholder="Search"
+              className="block w-full py-1.5 pr-5 text-gray-700 bg-white border border-gray-200 rounded-lg md:w-80 placeholder-gray-400/70 pl-11 rtl:pr-11 rtl:pl-5 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
+            />
+          </div>
+        </div>
         <div className="w-11/12">
           <div className="test1 rounded-t-lg">
             {/* <div className="border-4 border-red-500 bg-rose-100 overflow-x-auto rounded-lg shadow w-9/12"> */}
             {/* <table className="w-full border-collapse"> */}
             {/* <table className="w-full text-left"> */}
             <table className="max-w-screen-lg min-w-full divide-y divide-gray-200 bg-white text-sm text-left">
-              <thead className="ltr:text-left rtl:text-right bg-tanglow">
+              <thead className="ltr:text-left rtl:text-right bg-gray-500">
                 <tr>
+                  <th className="px-4 py-2">
+                    <label htmlFor="SelectAll" className="sr-only">
+                      Select All
+                    </label>
+                    <input
+                      type="checkbox"
+                      id="SelectAll"
+                      className="size-5 rounded border-gray-300"
+                    />
+                  </th>
                   {columnTitles.map((column, index) => (
                     <React.Fragment key={column.key}>
                       <th className="whitespace-nowrap px-4 py-2 font-medium text-gray-900">
@@ -103,9 +137,20 @@ export default function OfficerDashboard() {
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200">
+              <tbody className="divide-y divide-gray-200 bg-gray-200">
                 {data.map((applicant) => (
                   <tr key={applicant.id}>
+                    <td className="px-4 py-2">
+                      <label className="sr-only" htmlFor={`Row${applicant.id}`}>
+                        Row {applicant.id}
+                      </label>
+                      <input
+                        className="size-5 rounded border-gray-300"
+                        type="checkbox"
+                        id={`Row${applicant.id}`}
+                      />
+                    </td>
+
                     {columnTitles.map((column) => (
                       <td
                         key={column.key}
@@ -116,86 +161,22 @@ export default function OfficerDashboard() {
                     ))}
                     <td className="">
                       <button
-                        className="text-black hover:bg-gold btn btn-outline btn-sm ml-2 mt-2 mb-2"
+                        className="btn btn-neutral"
                         onClick={() =>
                           document.getElementById("acceptOfficer").showModal()
                         }
                       >
-                        Accept
+                        view feedback
                       </button>
-                      <dialog id="acceptOfficer" className="modal ">
-                        <div className="modal-box w-11/12 max-w-5xl ">
-                          <form method="dialog">
-                            {/* if there is a button in form, it will close the modal */}
-                            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-transparent hover:bg-slate-200 hover:text-black">
-                              ✕
-                            </button>
-                          </form>
-                          <h3 className=" text-2xl text-center text-white">
-                            ACCEPTED!
-                          </h3>
-                          <p className="py-4 text-center text-lg text-white">
-                            Sent to be reviewed by the TBI Board
-                          </p>
-                        </div>
-                      </dialog>
-                    </td>
-                    <td className="">
-                      <button
-                        className="text-black hover:bg-gold btn btn-outline  btn-sm ml-3 mr-4 mt-2 mb-2"
-                        onClick={() =>
-                          document.getElementById("declineOfficer").showModal()
-                        }
-                      >
-                        Decline
-                      </button>
-
-                      <dialog id="declineOfficer" className="modal">
-                        <div className="modal-box w-11/12 max-w-5xl bg-white ">
-                          <form method="dialog">
-                            {/* if there is a button in form, it will close the modal */}
-                            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-transparent hover:bg-slate-200 hover:text-black">
-                              ✕
-                            </button>
-                          </form>
-                          <h3 className=" text-2xl text-black ">
-                            Input Feedback
-                          </h3>
-                          <input
-                            type="text"
-                            placeholder="Type here"
-                            className="input input-bordered w-full max-w-xs mt-5 ml-3 bg-transparent"
-                          />
-                          <p className="py-4 text-lg text-black">
-                            Qualified for Reapplication?
-                          </p>
-
-                          
-                            <div className=" form-control w-20">
-                              <label className="label content-center text-black">
-                                <input
-                                  type="radio"
-                                  name="radio-10"
-                                  className="radio checked:bg-tanglow border-black"
-                                  checked
-                                />
-                                YES
-                              </label>
-                            </div>
-                          
-
-                            <div className="border-2 border-rose-500 form-control w-20">
-                              <label className="label content-center text-black">
-                                <input
-                                  type="radio"
-                                  name="radio-10"
-                                  className="radio checked:bg-tanglow border-black"
-                                  checked
-                                />
-                                NO
-                              </label>
-                            </div>
-
+                      <dialog id="acceptOfficer" className="modal">
+                        <div className="modal-box w-11/12 max-w-5xl">
+                          <h3 className="font-bold text-lg">create account</h3>
+                          <p className="py-4">temporary</p>
+                          <div className="modal-action">
+                            <form method="dialog">
+                              <button className="btn">Close</button>
+                            </form>
+                          </div>
                         </div>
                       </dialog>
                     </td>
@@ -204,9 +185,10 @@ export default function OfficerDashboard() {
               </tbody>
             </table>
           </div>
-          <div className="text-lg absolute font-bold bottom-8 right-12 text-black">
-            <Link to="/officer">logout</Link>
-          </div>
+        </div>
+        <div>
+          <button>btn send certificate</button>
+          <button>btn delete</button>
         </div>
       </div>
     </>

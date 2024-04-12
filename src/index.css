@@ -3,7 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* html {
+  scroll-behavior: smooth;
+} */
 textarea {
   @apply indent-2;
   @apply bg-white;
@@ -13,23 +15,27 @@ textarea {
   @apply indent-0;
   @apply bg-white;
 }
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
 /* 
 .animate-bounce {
   animation: bounce 0.5s;
 } */
+
+.test1 {
+  overflow-x: auto;
+}
+
+.test1::-webkit-scrollbar {
+  width: 20px;
+}
+
+.test1::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.test1::-webkit-scrollbar-thumb {
+  background: orange;
+}
+
+.test1::-webkit-scrollbar-thumb:hover {
+  background: red;
+}

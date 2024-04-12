@@ -27,6 +27,7 @@ export default {
         "-4": "-1rem",
         "-8": "-2rem",
         "-16": "-4rem",
+        testmargin: "900px",
       },
       borderWidth: {
         10: "10px",
@@ -48,6 +49,7 @@ export default {
       width: {
         960: "960px",
         642: "542px",
+        w80: "80%",
       },
       height: {
         560: "520px",
@@ -59,6 +61,20 @@ export default {
       },
       backgroundColor: {
         tanglow: "#FDCC01",
+        gold:"#B6B6B6"
+      },
+      colors: {
+        formbg: {
+          dark: "#D3AC09",
+          light: "#E9D790",
+        },
+      },
+      abg: {
+        darklow: "D3AC09",
+        light: "E9D790",
+      },
+      screens: {
+        xl: "1310px",
       },
     },
   },
