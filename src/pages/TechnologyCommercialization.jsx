@@ -4,7 +4,7 @@ export default function TechnologyCommercialization() {
       <h2 className="font-semibold mb-8">
         Technology and Commercialization Readiness Level
       </h2>
-      <p>
+      <p className="text-justify">
         This form, adopted from NYSERDA, assists emerging and growing companies
         in determining the technical and commercial maturity of their products
         or innovations. It utilizes a customized and integrated tool that
@@ -15,11 +15,11 @@ export default function TechnologyCommercialization() {
         solutions and ventures across various other industries.
       </p>
       <br />
-      <p className="mb-8">
+      <p className="text-justify mb-8">
         For each category, please select the option that best describes the
         current status of your product, solution, or innovation.
       </p>
-      <div className="mt-16">
+      <div className="mt-16 text-justify">
         <h2 className="mb-6">Technology</h2>
         <div className="flex flex-col">
           <div className="flex items-center mb-4">
@@ -85,7 +85,7 @@ export default function TechnologyCommercialization() {
           </div>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 text-justify">
         <h2 className="mb-6">Product Development</h2>
         <div className="flex flex-col">
           <div className="flex items-center mb-4">
@@ -150,7 +150,7 @@ export default function TechnologyCommercialization() {
           </div>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 text-justify">
         <h2 className="mb-6">Competitive Landscape</h2>
         <div className="flex flex-col">
           <div className="flex items-center mb-4">
@@ -221,7 +221,7 @@ export default function TechnologyCommercialization() {
           </div>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 text-justify">
         <h2 className="mb-6">Product Development/Design</h2>
         <div className="flex flex-col">
           <div className="flex items-center mb-4">
@@ -288,7 +288,7 @@ export default function TechnologyCommercialization() {
           </div>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 text-justify">
         <h2 className="mb-6">Team</h2>
         <div className="flex flex-col">
           <div className="flex items-center mb-4">
@@ -355,7 +355,7 @@ export default function TechnologyCommercialization() {
           </div>
         </div>
       </div>
-      <div className=" mt-16">
+      <div className=" mt-16 text-justify">
         <h2 className="mb-6">Go-to-Market</h2>
         <div className="flex flex-col">
           <div className="flex items-center mb-4">
@@ -422,7 +422,7 @@ export default function TechnologyCommercialization() {
           </div>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 text-justify">
         <h2 className="mb-6">Manufacturing/Supply Chain</h2>
         <div className="flex flex-col">
           <div className="flex items-center mb-4">

@@ -3,7 +3,7 @@ export default function EligibilityAgreement() {
     <>
       <div className="mt-20 mb-14">
         <h2 className="font-semibold mb-4">Eligibility and agreement</h2>
-        <p className="mb-8">
+        <p className="mb-8 text-justify">
           I confirm that I have read, understood, and agree to comply with the
           eligibility criteria and rules of LaunchLab program.
         </p>

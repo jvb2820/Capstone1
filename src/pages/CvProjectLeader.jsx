@@ -5,7 +5,7 @@ import TechnologyCommercialization from "./TechnologyCommercialization";
 export default function CvProjectLeader() {
   return (
     <>
-      <div className="mt-16 font-secondary text-black p-4 ml-6 mr-6">
+      <div className="mt-16 font-secondary text-black p ml-6 mr-6">
         <h2 className="font-semibold mb-8">
           III. Curriculum Vitae of the Project Leader
         </h2>
@@ -24,7 +24,7 @@ export default function CvProjectLeader() {
             Upload a file{" "}
           </label>
         </div>
-        <hr />
+        <hr className="mt-10" />
         <div className="mt-14 mb-14">
           <h2 className="mb-4">
             Links to any supporting materials (e.g., website, explainer video,
@@ -179,7 +179,7 @@ export default function CvProjectLeader() {
             <br />
           </label>
         </div>
-        <hr />
+        <hr className="mt-10" />
         <TechnologyCommercialization />
         <hr />
         <EligibilityAgreement />
