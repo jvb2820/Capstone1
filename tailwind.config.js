@@ -63,6 +63,16 @@ export default {
         tanglow: "#FDCC01",
         gold:"#B6B6B6"
       },
+      colors: {
+        formbg: {
+          dark: "#D3AC09",
+          light: "#E9D790",
+        },
+      },
+      abg: {
+        darklow: "D3AC09",
+        light: "E9D790",
+      },
       screens: {
         xl: "1310px",
       },
