@@ -161,41 +161,42 @@ export default function OfficerDashboard() {
                           <h3 className=" text-2xl text-black ">
                             Input Feedback
                           </h3>
-                          <input
-                            type="text"
-                            placeholder="Type here"
-                            className="input input-bordered w-full max-w-xs mt-5 ml-3 bg-transparent"
-                          />
+                          <textarea
+                            className=" border-2 border-b-gray-400 resize-none textarea bg-transparent mt-3 w-full text-black overflow-hidden"
+                            placeholder="Input here"
+                          ></textarea>
                           <p className="py-4 text-lg text-black">
                             Qualified for Reapplication?
                           </p>
 
-                          
-                            <div className=" form-control w-20">
-                              <label className="label content-center text-black">
-                                <input
-                                  type="radio"
-                                  name="radio-10"
-                                  className="radio checked:bg-tanglow border-black"
-                                  checked
-                                />
-                                YES
-                              </label>
-                            </div>
-                          
+                          <div className=" form-control w-20">
+                            <label className="label content-center text-black">
+                              <input
+                                type="radio"
+                                name="radio-10"
+                                className="radio checked:bg-tanglow border-black"
+                              />
+                              YES
+                            </label>
+                          </div>
 
-                            <div className="border-2 border-rose-500 form-control w-20">
-                              <label className="label content-center text-black">
-                                <input
-                                  type="radio"
-                                  name="radio-10"
-                                  className="radio checked:bg-tanglow border-black"
-                                  checked
-                                />
-                                NO
-                              </label>
-                            </div>
+                          <div className=" form-control w-20">
+                            <label className="label content-center text-black">
+                              <input
+                                type="radio"
+                                name="radio-10"
+                                className="radio checked:bg-tanglow border-black"
+                              />
+                              NO
+                            </label>
+                          </div>
 
+                          <div className="modal-action">
+                            <form method="dialog">
+                              {/* if there is a button in form, it will close the modal */}
+                              <button className="btn bg-transparent border-none text-black hover:bg-tanglow bg-slate-50 font-bold btn-sm">Send</button>
+                            </form>
+                          </div>
                         </div>
                       </dialog>
                     </td>

@@ -27,7 +27,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer1"
               name="answer"
-              className=" checked:bg-tanglow   border-black radio h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className=" checked:bg-tanglow   border-black radio h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer1" className="ml-2">
               Project work is beyond basic research and technology concept has
@@ -39,7 +39,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer2"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer2" className="ml-2">
               Applied research has begun and practical application(s) have been
@@ -51,7 +51,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer3"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer3" className="ml-2">
               Preliminary testing of technology components has begun, and
@@ -64,7 +64,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer4"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer4" className="ml-2">
               Initial testing of integrated product/system has been completed in
@@ -76,7 +76,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer5"
               name="answer"
-              className=" checked:bg-tanglow checked:size-5 radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className=" checked:bg-tanglow checked:size-5 radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer5" className="ml-2">
               Laboratory scale integrated product/system demonstrates
@@ -93,7 +93,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer6"
               name="answer"
-              className="checked:bg-tanglow   radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked 
+              className="checked:bg-tanglow   radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"  
             />
             <label htmlFor="answer6" className="ml-2">
               Initial product/market fit has been defined
@@ -104,7 +104,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer7"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer7" className="ml-2">
               Pilot scale product/system has been tested in the intended
@@ -116,7 +116,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer8"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer8" className="ml-2">
               Demonstration of a full scale product/system prototype has been
@@ -128,7 +128,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer9"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer9" className="ml-2">
               Actual product/system has been proven to work in its near-final
@@ -141,7 +141,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer10"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer10" className="ml-2">
               Product/system is in final form and has been operated under the
@@ -158,7 +158,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer11"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer11" className="ml-2">
               Secondary market research has been performed and basic knowledge
@@ -171,7 +171,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer12"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer12" className="ml-2">
               Primary market research to prove the product/system commercial
@@ -184,7 +184,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer13"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer13" className="ml-2">
               Comprehensive market research to prove the product/system
@@ -198,7 +198,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer14"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer14" className="ml-2">
               Competitive analysis to illustrate unique features and advantages
@@ -211,7 +211,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer15"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer15" className="ml-2">
               Full and complete understanding of the competitive landscape,
@@ -229,7 +229,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer16"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer16" className="ml-2">
               One or more initial product hypotheses have been defined
@@ -240,7 +240,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer17"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer17" className="ml-2">
               Mapping product/system attributes against customer needs has
@@ -252,7 +252,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer18"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer18" className="ml-2">
               The product/system has been scaled from laboratory to pilot scale
@@ -265,7 +265,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer19"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer9" className="ml-2">
               Comprehensive customer value proposition model has been developed,
@@ -278,7 +278,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer20"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer20" className="ml-2">
               Product/system final design optimization has been completed,
@@ -296,7 +296,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer21"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer21" className="ml-2">
               No team or company in place (single individual, no legal entity)
@@ -307,7 +307,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer22"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer22" className="ml-2">
               Solely technical or non-technical founder(s) running the company
@@ -319,7 +319,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer23"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer23" className="ml-2">
               Solely technical or non-technical founder(s) running the company
@@ -332,7 +332,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer24"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer24" className="ml-2">
               Balanced team with technical and business
@@ -345,7 +345,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer25"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer25" className="ml-2">
               Balanced team with all capabilities onboard (e.g., sales,
@@ -363,7 +363,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer26"
               name="answer"
-              className=" checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className=" checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer26" className="ml-2">
               Initial business model and value proposition have been defined
@@ -374,7 +374,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer27"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer27" className="ml-2">
               Customers/partners have been interviewed to understand their pain
@@ -387,7 +387,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer28"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer28" className="ml-2">
               Market and customer/partner needs and how those translate to
@@ -400,7 +400,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer29"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer29" className="ml-2">
               Partnerships have been formed with key stakeholders across the
@@ -413,7 +413,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer30"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer30" className="ml-2">
               Supply agreements with suppliers and partners are in place and
@@ -430,7 +430,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer31"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer31" className="ml-2">
               Potential suppliers, partners, and customers have been identified
@@ -442,7 +442,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer32"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer32" className="ml-2">
               Relationships have been established with potential suppliers,
@@ -455,7 +455,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer33"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer33" className="ml-2">
               Manufacturing process qualifications (e.g. QC/QA) have been
@@ -467,7 +467,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer34"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer34" className="ml-2">
               Products/systems have been pilot manufactured and sold to initial
@@ -479,7 +479,7 @@ export default function TechnologyCommercialization() {
               type="radio"
               id="answer35"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer35" className="ml-2">
               Full scale manufacturing and widespread deployment of
