@@ -31,11 +31,11 @@ export default function ApplicantCommitmentForm() {
           <div className="flex items-center mb-4">
             <input
               type="radio"
-              id="answer2"
+              id="answer1.2"
               name="answer"
               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
             />
-            <label htmlFor="answer2" className="ml-2">
+            <label htmlFor="answer1.2" className="ml-2">
               No
             </label>
           </div>
@@ -50,11 +50,11 @@ export default function ApplicantCommitmentForm() {
           <div className="flex items-center mb-4">
             <input
               type="radio"
-              id="answer3"
+              id="answer2.1"
               name="answer"
               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
             />
-            <label htmlFor="answer3" className="ml-2">
+            <label htmlFor="answer2.1" className="ml-2">
               Yes
             </label>
           </div>
@@ -63,11 +63,11 @@ export default function ApplicantCommitmentForm() {
           <div className="flex items-center mb-4">
             <input
               type="radio"
-              id="answer4"
+              id="answer2.2"
               name="answer"
               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
             />
-            <label htmlFor="answer4" className="ml-2">
+            <label htmlFor="answer2.2" className="ml-2">
               No
             </label>
           </div>
@@ -85,11 +85,11 @@ export default function ApplicantCommitmentForm() {
           <div className="flex items-center mb-4">
             <input
               type="radio"
-              id="answer5"
+              id="answer3.1"
               name="answer"
               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
             />
-            <label htmlFor="answer5" className="ml-2">
+            <label htmlFor="answer3.1" className="ml-2">
               Yes
             </label>
           </div>
@@ -98,11 +98,11 @@ export default function ApplicantCommitmentForm() {
           <div className="flex items-center mb-4">
             <input
               type="radio"
-              id="answer6"
+              id="answer3.2"
               name="answer"
               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
             />
-            <label htmlFor="answer6" className="ml-2">
+            <label htmlFor="answer3.2" className="ml-2">
               No
             </label>
           </div>
@@ -118,11 +118,11 @@ export default function ApplicantCommitmentForm() {
           <div className="flex items-center mb-4">
             <input
               type="radio"
-              id="answer7"
+              id="answer4.1"
               name="answer"
               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
             />
-            <label htmlFor="answer7" className="ml-2">
+            <label htmlFor="answer4.1" className="ml-2">
               Yes
             </label>
           </div>
@@ -131,11 +131,11 @@ export default function ApplicantCommitmentForm() {
           <div className="flex items-center mb-4">
             <input
               type="radio"
-              id="answer8"
+              id="answer4.2"
               name="answer"
               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
             />
-            <label htmlFor="answer8" className="ml-2">
+            <label htmlFor="answer4.2" className="ml-2">
               No
             </label>
           </div>

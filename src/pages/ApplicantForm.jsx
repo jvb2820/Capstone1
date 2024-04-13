@@ -49,7 +49,7 @@ export default function ApplicantForm() {
       <div className="bg-gradient-to-r from-formbg-dark to-formbg-light flex md:flex-row-reverse w-full">
         <img
           src="../public/images/honeycomb.png"
-          className="mix-blend-overlay absolute top-0 right-0 md:fixed"
+          className="mix-blend-overlay absolute top-0 right-0 md:fixed pointer-events-none z-0"
         />
         {/* <div className="z-50 border-2 border-green-500 xl:fixed xl:block text-black right-0 hidden w-96 pt-20"> */}
         <div className="font-secondary font-normal text-black pt-20 mt-14 md:w-3/12 md:fixed md:block hidden">
@@ -85,32 +85,32 @@ export default function ApplicantForm() {
         </div>
         <img
           src="../public/images/circle.png"
-          className="mix-blend-overlay w-40 h-40 absolute top-14 left-4 md:fixed"
+          className="mix-blend-overlay w-40 h-40 absolute top-14 left-4 md:fixed pointer-events-none z-0"
         />
         <img
           src="../public/images/cone.png"
-          className="mix-blend-overlay w-40 h-40 absolute top-4 left-1/2 right-0 md:fixed"
+          className="mix-blend-overlay w-40 h-40 absolute top-4 left-1/2 right-0 md:fixed pointer-events-none z-0"
         />
         <img
           src="../public/images/cylinder.png"
-          className="mix-blend-overlay w-40 h-40 absolute bottom-10 left-16 md:fixed"
+          className="mix-blend-overlay w-40 h-40 absolute bottom-10 left-16 md:fixed pointer-events-none z-0"
         />
         <img
           src="../public/images/curl.png"
-          className="mix-blend-overlay w-40 h-40 absolute bottom-0 left-1/2 pt-10 right-0 md:fixed"
+          className="mix-blend-overlay w-40 h-40 absolute bottom-0 left-1/2 pt-10 right-0 md:fixed pointer-events-none z-0"
         />
         <div className="w-full p-20 mt-14">
           {/* <div className="border-4 border-red-500 bg-rose p-10 sm:p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full"> */}
           {/* <div className="border-4 border-pink-500 w-full xl:w-9/12 bg-white mr-96"> */}
-          <div className="border rounded-lg border-black bg-white md:w-9/12">
+          <div className="border rounded-lg border-black bg-white md:w-9/12  relative z-10">
             <img
               src="../public/images/wilBlackBox.png"
-              className="h-20 ml-auto mr-4 mt-4"
+              className="h-20 ml-auto mr-4 mt-4 pointer-events-none"
             />
             <div className="flex flex-col md:flex-row items-center">
               <img
                 src="../public/images/launchlab.png"
-                className="w-64 h-20 align-middles mb-8 -mt-8"
+                className="w-64 h-20 align-middles mb-8 -mt-8 pointer-events-none"
               ></img>
               <h1 className="font-secondary text-black font-semibold text-2xl -mt-8 mb-6 -ml-6">
                 Registration Form
@@ -157,28 +157,28 @@ export default function ApplicantForm() {
               contact our team, Engr. Ralph Laviste at{" "}
               <a
                 href="mailto:ralph.laviste@cit.edu"
-                className="font-bold text-blue-700"
+                className="font-semibold text-blue-700"
               >
                 ralph.laviste@cit.edu
               </a>{" "}
               and{" "}
               <a
                 href="mailto:rlaviste@gmail.com"
-                className="font-bold text-blue-700"
+                className="font-semibold text-blue-700"
               >
                 rlaviste@gmail.com
               </a>
               , and Engr. Jurydel Rama at{" "}
               <a
                 href="mailto:jurydel.rama@cit.edu"
-                className="font-bold text-blue-700"
+                className="font-semibold text-blue-700"
               >
                 jurydel.rama@cit.edu
               </a>{" "}
               and{" "}
               <a
                 href="mailto:jurydelrama@gmail.com"
-                className="font-bold text-blue-700"
+                className="font-semibold text-blue-700"
               >
                 jurydelrama@gmail.com
               </a>
@@ -262,7 +262,7 @@ export default function ApplicantForm() {
                   to contact our project lead, Engr. Jurydel Rama, at{" "}
                   <a
                     href="mailto:jurydel.rama@cit.edu"
-                    className="font-bold text-blue-700"
+                    className="font-semibold text-blue-700"
                   >
                     jurydel.rama@cit.edu
                   </a>
@@ -284,7 +284,6 @@ export default function ApplicantForm() {
               </Link>
             </div>
           </div>
-
         </div>
         <div className="bg-transparent text-white py-4 px-8 flex justify-end items-center fixed bottom-0 w-full z-50">
           {isVisible && (
