@@ -2,6 +2,8 @@ package com.capstone.server.entity;
 
 import org.hibernate.annotations.NaturalId;
 
+// import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,8 +16,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class Applicant {
@@ -52,13 +54,18 @@ public class Applicant {
     private String manufacturingSupplyChain;
 
     // eligibility and agreement
-    private Boolean eligibilityAgreement;
+    // @JsonDeserialize(using = CustomBooleanDeserializer.class)
+    private String eligibilityAgreement;
 
     // applicant commitment verification form
-    private Boolean applicantCommitmentVerification1;
-    private Boolean applicantCommitmentVerification2;
-    private Boolean applicantCommitmentVerification3;
-    private Boolean applicantCommitmentVerification4;
+    // @JsonDeserialize(using = CustomBooleanDeserializer.class)
+    private String applicantCommitmentVerification1;
+    // @JsonDeserialize(using = CustomBooleanDeserializer.class)
+    private String applicantCommitmentVerification2;
+    // @JsonDeserialize(using = CustomBooleanDeserializer.class)
+    private String applicantCommitmentVerification3;
+    // @JsonDeserialize(using = CustomBooleanDeserializer.class)
+    private String applicantCommitmentVerification4;
 
     // about startup
     private String startupProjectDescription;
@@ -101,5 +108,4 @@ public class Applicant {
     private String objectives;
     private String scopeProposal;
     private String methodologyExpectedOutputs;
-
 }
