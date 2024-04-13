@@ -1,6 +1,6 @@
 export default function AboutProposedAcceleration() {
   return (
-    <div className="font-secondary text-black p-4 ml-6 mr-6 mt-16">
+    <div className="font-secondary text-black p ml-6 mr-6 mt-16">
       <h2 className="font-semibold mb-6">
         II. About the Proposed Acceleration
       </h2>
@@ -10,7 +10,7 @@ export default function AboutProposedAcceleration() {
           <textarea
             id="OrderNotes"
             className="bg-white w-full resize-none border-none align-top focus:ring-0 sm:text-sm"
-            rows="4"
+            rows="6"
             placeholder="Type something here..."
           ></textarea>
         </div>
@@ -21,7 +21,7 @@ export default function AboutProposedAcceleration() {
           <textarea
             id="OrderNotes"
             className="bg-white w-full resize-none border-none align-top focus:ring-0 sm:text-sm"
-            rows="4"
+            rows="6"
             placeholder="Type something here..."
           ></textarea>
         </div>
@@ -32,7 +32,7 @@ export default function AboutProposedAcceleration() {
           <textarea
             id="OrderNotes"
             className="bg-white w-full resize-none border-none align-top focus:ring-0 sm:text-sm"
-            rows="4"
+            rows="6"
             placeholder="Type something here..."
           ></textarea>
         </div>

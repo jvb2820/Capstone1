@@ -8,7 +8,7 @@ export default function CapsuleProposal() {
           <textarea
             id="OrderNotes"
             className="bg-white w-full resize-none border-none align-top focus:ring-0 sm:text-sm"
-            rows="4"
+            rows="6"
             placeholder="Type something here..."
           ></textarea>
         </div>
@@ -100,7 +100,7 @@ export default function CapsuleProposal() {
             <textarea
               id="OrderNotes"
               className="bg-white w-full resize-none border-none align-top focus:ring-0 sm:text-sm"
-              rows="4"
+              rows="6"
               placeholder="Type something here..."
             ></textarea>
           </div>
@@ -111,7 +111,7 @@ export default function CapsuleProposal() {
             <textarea
               id="OrderNotes"
               className="bg-white w-full resize-none border-none align-top focus:ring-0 sm:text-sm"
-              rows="4"
+              rows="6"
               placeholder="Type something here..."
             ></textarea>
           </div>
@@ -122,7 +122,7 @@ export default function CapsuleProposal() {
             <textarea
               id="OrderNotes"
               className="bg-white w-full resize-none border-none align-top focus:ring-0 sm:text-sm"
-              rows="4"
+              rows="6"
               placeholder="Type something here..."
             ></textarea>
           </div>
@@ -251,7 +251,7 @@ export default function CapsuleProposal() {
             <tbody>
               <tr>
                 <td className="border border-gray-500 px-4 py-2">
-                  <p>product or service offering</p>
+                  <p>Product or Service offering</p>
                 </td>
                 <td className="border border-gray-500 px-4 py-2">
                   <textarea
@@ -288,7 +288,7 @@ export default function CapsuleProposal() {
               </tr>
               <tr>
                 <td className="border border-gray-500 px-4 py-2">
-                  <p>pricing strategy</p>
+                  <p>Pricing strategy</p>
                 </td>
                 <td className="border border-gray-500 px-4 py-2">
                   <textarea
@@ -334,7 +334,7 @@ export default function CapsuleProposal() {
             <textarea
               id="OrderNotes"
               className="bg-white w-full resize-none border-none align-top focus:ring-0 sm:text-sm"
-              rows="4"
+              rows="6"
               placeholder="Type something here..."
             ></textarea>
           </div>

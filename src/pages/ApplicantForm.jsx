@@ -47,8 +47,12 @@ export default function ApplicantForm() {
   return (
     <>
       <div className="bg-gradient-to-r from-formbg-dark to-formbg-light flex md:flex-row-reverse w-full">
+        <img
+          src="../public/images/honeycomb.png"
+          className="mix-blend-overlay absolute top-0 right-0 md:fixed"
+        />
         {/* <div className="z-50 border-2 border-green-500 xl:fixed xl:block text-black right-0 hidden w-96 pt-20"> */}
-        <div className="font-secondary font-normal text-black pt-20 md:w-3/12 md:fixed md:block hidden">
+        <div className="font-secondary font-normal text-black pt-20 mt-14 md:w-3/12 md:fixed md:block hidden">
           <div className="mb-4 font-semibold">Registration Form</div>
           <ul>
             <li className="mb-4 ml-2 hover:text-white">
@@ -79,8 +83,23 @@ export default function ApplicantForm() {
             </li>
           </ul>
         </div>
-
-        <div className="w-full p-20">
+        <img
+          src="../public/images/circle.png"
+          className="mix-blend-overlay w-40 h-40 absolute top-14 left-4 md:fixed"
+        />
+        <img
+          src="../public/images/cone.png"
+          className="mix-blend-overlay w-40 h-40 absolute top-4 left-1/2 right-0 md:fixed"
+        />
+        <img
+          src="../public/images/cylinder.png"
+          className="mix-blend-overlay w-40 h-40 absolute bottom-10 left-16 md:fixed"
+        />
+        <img
+          src="../public/images/curl.png"
+          className="mix-blend-overlay w-40 h-40 absolute bottom-0 left-1/2 pt-10 right-0 md:fixed"
+        />
+        <div className="w-full p-20 mt-14">
           {/* <div className="border-4 border-red-500 bg-rose p-10 sm:p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full"> */}
           {/* <div className="border-4 border-pink-500 w-full xl:w-9/12 bg-white mr-96"> */}
           <div className="border rounded-lg border-black bg-white md:w-9/12">
@@ -97,11 +116,12 @@ export default function ApplicantForm() {
                 Registration Form
               </h1>
             </div>
-            <p className="font-secondary mb-8 ml-6 text-black mr-6">
+            <p className="font-secondary text-justify mb-8 ml-6 text-black mr-6">
               Thank you for your interest in participating the LaunchLab Program
               of DASIG. This program is spearheaded by CIT-U Wildcat Innovation
               Labs. Please complete the following form to submit your capsule
               proposal for consideration.
+              <hr className="mt-12" />
             </p>
             <div className="ml-6 mt-14">
               <label
@@ -118,9 +138,9 @@ export default function ApplicantForm() {
                 />
                 <br />
               </label>
-              <hr />
+              <hr className="mr-6" />
             </div>
-            <p className="font-secondary text-black mt-8 mb-8 ml-6 mr-8">
+            <p className="font-secondary text-black text-justify mt-10 mb-8 ml-6 mr-8">
               By accomplishing this form, the following personal information
               will be collected including, startup team members names, personal
               email address, mobile phone number and other relevant information.
@@ -131,7 +151,7 @@ export default function ApplicantForm() {
               Innovation Growth (DASIG) respects your rights as a data subject
               under the Data Privacy Act.
             </p>
-            <p className="font-secondary text-black mt-8 mb-8 ml-6 mr-8">
+            <p className="font-secondary text-black text-justify mt-8 mb-8 ml-6 mr-8">
               If you have further questions and concerns regarding the
               processing of your personal information, you are welcome to
               contact our team, Engr. Ralph Laviste at{" "}
@@ -164,7 +184,7 @@ export default function ApplicantForm() {
               </a>
               .
             </p>
-            <p className="font-secondary text-black mt-8 mb-8 ml-6 mr-8">
+            <p className="font-secondary text-black text-justify mt-8 mb-8 ml-6 mr-8">
               In compliance with the Data Privacy Act (DPA) of 2012, also known
               as the Republic Act of 10173 (RA 10173), I agree and authorize the
               Development and Acceleration Support for Innovation Growth (DASIG)
@@ -199,7 +219,7 @@ export default function ApplicantForm() {
                 </span>
               </label>
             </div>
-            <hr />{" "}
+            <hr className="mt-10 mb-10 ml-6 mr-6" />
             <div className="ml-6">
               <label
                 htmlFor="UserEmail"
@@ -232,7 +252,7 @@ export default function ApplicantForm() {
               </div>
 
               <br />
-              <div className="font-secondary text-black ml-6 mr-6">
+              <div className="font-secondary text-justify text-black ml-6 mr-6">
                 <p className="mb-6">
                   Thank you for taking the time to complete the registration. We
                   understand and respect your concerns.
@@ -249,18 +269,22 @@ export default function ApplicantForm() {
                 </p>
               </div>
             </div>
-            <div className="justify-end flex mt-16 mb-6 mr-6">
-              <button className="bg-tanglow text-black hover:bg-black hover:text-white font-secondary font-medium right-0 rounded btn-neutral border-b-2 border-black border-solid border-opacity-100 w-36 h-12">
+            <div className="relative z-10 justify-end flex mt-16 mb-6 mr-6">
+              <button className=" bg-tanglow text-black hover:bg-black hover:text-white font-secondary font-medium right-0 rounded btn-neutral border-b-2 border-black border-solid border-opacity-100 w-36 h-12 ">
                 Submit
               </button>
             </div>
           </div>
-          <div className="font-secondary text-black bottom-0 flex justify-center mt-8">
-            Already Applied? <span className="mr-2"></span>
-            <Link to="/applicant" className="font-semibold">
-              Login
-            </Link>
+
+          <div className="flex justify-center mr-96 mt-8">
+            <div className="font-secondary text-black bottom-0">
+              Already Applied? <span className="mr-2"></span>
+              <Link to="/applicant" className="font-semibold">
+                Login
+              </Link>
+            </div>
           </div>
+
         </div>
         <div className="bg-transparent text-white py-4 px-8 flex justify-end items-center fixed bottom-0 w-full z-50">
           {isVisible && (

@@ -61,6 +61,7 @@ export default {
       },
       backgroundColor: {
         tanglow: "#FDCC01",
+        gold:"#B6B6B6"
       },
       colors: {
         formbg: {

@@ -75,9 +75,9 @@ export default function OfficerDashboard() {
       {/* <div className="border-2 border-rose-500 h-screen bg-white flex justify-start items-center flex-col justify-items-center text-center w-screen"> */}
       {/* <div> */}
       <div className="pt-32 h-screen bg-white  flex justify-start items-center flex-col justify-items-center text-center">
-        <div className="border-2 border-green-500 p-5">
-          <h1 className="text-xl mb-2 text-center">
-            review applicant documents
+        <div className="p-5">
+          <h1 className="text-xl mb-2 text-center text-black">
+            REVIEW APPLICANT DOCUMENTS
           </h1>
         </div>
 
@@ -89,7 +89,7 @@ export default function OfficerDashboard() {
             {/* <table className="w-full border-collapse"> */}
             {/* <table className="w-full text-left"> */}
             <table className="max-w-screen-lg min-w-full divide-y divide-gray-200 bg-white text-sm text-left">
-              <thead className="ltr:text-left rtl:text-right bg-gray-500">
+              <thead className="ltr:text-left rtl:text-right bg-tanglow">
                 <tr>
                   {columnTitles.map((column, index) => (
                     <React.Fragment key={column.key}>
@@ -103,7 +103,7 @@ export default function OfficerDashboard() {
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200 bg-gray-200">
+              <tbody className="divide-y divide-gray-200">
                 {data.map((applicant) => (
                   <tr key={applicant.id}>
                     {columnTitles.map((column) => (
@@ -116,47 +116,86 @@ export default function OfficerDashboard() {
                     ))}
                     <td className="">
                       <button
-                        className="btn btn-neutral"
+                        className="text-black hover:bg-gold btn btn-outline btn-sm ml-2 mt-2 mb-2"
                         onClick={() =>
                           document.getElementById("acceptOfficer").showModal()
                         }
                       >
-                        accept
+                        Accept
                       </button>
-                      <dialog id="acceptOfficer" className="modal">
-                        <div className="modal-box w-11/12 max-w-5xl">
-                          <h3 className="font-bold text-lg">acceptOfficer!</h3>
-                          <p className="py-4">
-                            Click the button below to close
+                      <dialog id="acceptOfficer" className="modal ">
+                        <div className="modal-box w-11/12 max-w-5xl ">
+                          <form method="dialog">
+                            {/* if there is a button in form, it will close the modal */}
+                            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-transparent hover:bg-slate-200 hover:text-black">
+                              ✕
+                            </button>
+                          </form>
+                          <h3 className=" text-2xl text-center text-white">
+                            ACCEPTED!
+                          </h3>
+                          <p className="py-4 text-center text-lg text-white">
+                            Sent to be reviewed by the TBI Board
                           </p>
-                          <div className="modal-action">
-                            <form method="dialog">
-                              <button className="btn">Close</button>
-                            </form>
-                          </div>
                         </div>
                       </dialog>
                     </td>
                     <td className="">
                       <button
-                        className="btn btn-neutral"
+                        className="text-black hover:bg-gold btn btn-outline  btn-sm ml-3 mr-4 mt-2 mb-2"
                         onClick={() =>
                           document.getElementById("declineOfficer").showModal()
                         }
                       >
-                        decline
+                        Decline
                       </button>
+
                       <dialog id="declineOfficer" className="modal">
-                        <div className="modal-box w-11/12 max-w-5xl">
-                          <h3 className="font-bold text-lg">declineOfficer!</h3>
-                          <p className="py-4">
-                            Click the button below to close
+                        <div className="modal-box w-11/12 max-w-5xl bg-white ">
+                          <form method="dialog">
+                            {/* if there is a button in form, it will close the modal */}
+                            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-transparent hover:bg-slate-200 hover:text-black">
+                              ✕
+                            </button>
+                          </form>
+                          <h3 className=" text-2xl text-black ">
+                            Input Feedback
+                          </h3>
+                          <input
+                            type="text"
+                            placeholder="Type here"
+                            className="input input-bordered w-full max-w-xs mt-5 ml-3 bg-transparent"
+                          />
+                          <p className="py-4 text-lg text-black">
+                            Qualified for Reapplication?
                           </p>
-                          <div className="modal-action">
-                            <form method="dialog">
-                              <button className="btn">send</button>
-                            </form>
-                          </div>
+
+                          
+                            <div className=" form-control w-20">
+                              <label className="label content-center text-black">
+                                <input
+                                  type="radio"
+                                  name="radio-10"
+                                  className="radio checked:bg-tanglow border-black"
+                                  checked
+                                />
+                                YES
+                              </label>
+                            </div>
+                          
+
+                            <div className="border-2 border-rose-500 form-control w-20">
+                              <label className="label content-center text-black">
+                                <input
+                                  type="radio"
+                                  name="radio-10"
+                                  className="radio checked:bg-tanglow border-black"
+                                  checked
+                                />
+                                NO
+                              </label>
+                            </div>
+
                         </div>
                       </dialog>
                     </td>
@@ -165,7 +204,7 @@ export default function OfficerDashboard() {
               </tbody>
             </table>
           </div>
-          <div className="border-2 border-rose-500 absolute bottom-0 right-0">
+          <div className="text-lg absolute font-bold bottom-8 right-12 text-black">
             <Link to="/officer">logout</Link>
           </div>
         </div>
