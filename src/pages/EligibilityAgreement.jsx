@@ -12,7 +12,7 @@ export default function EligibilityAgreement() {
             type="radio"
             id="agree"
             name="answer"
-            className="form-radio h-4 w-4 text-black transition duration-150 ease-in-out"
+            className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
           />
           <label htmlFor="agree" className="ml-2">
             I agree
@@ -23,7 +23,7 @@ export default function EligibilityAgreement() {
             type="radio"
             id="notagree"
             name="answer"
-            className="form-radio h-4 w-4 text-black transition duration-150 ease-in-out"
+            className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked    
           />
           <label htmlFor="notagree" className="ml-2">
             I do not agree

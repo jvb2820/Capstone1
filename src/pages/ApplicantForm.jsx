@@ -269,13 +269,14 @@ export default function ApplicantForm() {
                 </p>
               </div>
             </div>
-            <div className="justify-end flex mt-16 mb-6 mr-6">
-              <button className="bg-tanglow text-black hover:bg-black hover:text-white font-secondary font-medium right-0 rounded btn-neutral border-b-2 border-black border-solid border-opacity-100 w-36 h-12">
+            <div className="relative z-10 justify-end flex mt-16 mb-6 mr-6">
+              <button className=" bg-tanglow text-black hover:bg-black hover:text-white font-secondary font-medium right-0 rounded btn-neutral border-b-2 border-black border-solid border-opacity-100 w-36 h-12 ">
                 Submit
               </button>
             </div>
           </div>
-          <div className="justify-center flex mt-8">
+
+          <div className="flex justify-center mr-96 mt-8">
             <div className="font-secondary text-black bottom-0">
               Already Applied? <span className="mr-2"></span>
               <Link to="/applicant" className="font-semibold">
@@ -283,6 +284,7 @@ export default function ApplicantForm() {
               </Link>
             </div>
           </div>
+
         </div>
         <div className="bg-transparent text-white py-4 px-8 flex justify-end items-center fixed bottom-0 w-full z-50">
           {isVisible && (
