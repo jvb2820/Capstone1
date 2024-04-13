@@ -124,17 +124,17 @@ export default function OfficerDashboard() {
                         Accept
                       </button>
                       <dialog id="acceptOfficer" className="modal ">
-                        <div className="modal-box w-11/12 max-w-5xl ">
+                        <div className="modal-box w-11/12 max-w-5xl bg-white">
                           <form method="dialog">
                             {/* if there is a button in form, it will close the modal */}
                             <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-transparent hover:bg-slate-200 hover:text-black">
                               ✕
                             </button>
                           </form>
-                          <h3 className=" text-2xl text-center text-white">
+                          <h3 className=" text-2xl text-center text-black font-bold">
                             ACCEPTED!
                           </h3>
-                          <p className="py-4 text-center text-lg text-white">
+                          <p className="py-4 text-center text-lg text-black">
                             Sent to be reviewed by the TBI Board
                           </p>
                         </div>

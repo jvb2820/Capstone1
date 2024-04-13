@@ -62,7 +62,7 @@ function ApplicantLogin() {
             <button className="hover:text-white font-secondary text-black bg-transparent h-12 w-60 mt-16 btn btn-neutral">
               <Link
                 to="/applicantdashboard"
-                className="border-2 border-rose-500 items-center w-full p-3"
+                className=" items-center w-full p-3"
               >
                 {" "}
                 Login
