@@ -128,20 +128,20 @@ export default function CapsuleProposal() {
           </div>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 overflow-x-auto">
         <p className="mb-4">
           D. Historical Timeline of the Product/Project Development
         </p>
         <div>
-          <p className="mb-2 text-gray-500">Start from the most recent</p>
+          <p className="mt-6 mb-4 text-gray-500">Start from the most recent</p>
           <div className="border-none border-gray-500">
             <table className="w-full">
               <thead>
                 <tr>
-                  <th className="border border-gray-500 px-4 py-2">
+                  <th className="font-semibold border border-gray-500 px-4 py-2">
                     Month-Year
                   </th>
-                  <th className="border border-gray-500 px-4 py-2">
+                  <th className="font-semibold border border-gray-500 px-4 py-2">
                     Key Activities or Milestones
                   </th>
                 </tr>
@@ -225,32 +225,32 @@ export default function CapsuleProposal() {
       <div className="mt-16 overflow-x-auto">
         <p className="mb-4">E. Competitive Advantage Analysis</p>
         <div>
-          <p className="text-gray-500">
+          <p className="text-gray-500 mt-6 mb-4">
             Add more applicable competitive factors
           </p>
-          <table className="w-full">
+          <table className="w-full table-auto">
             <thead>
               <tr>
-                <th className="border border-gray-500 px-4 py-2">
+                <th className="w-1/5 font-semibold border border-gray-500 px-4 py-2">
                   Competitive Factors
                 </th>
-                <th className="border border-gray-500 px-4 py-2">
+                <th className="w-1/5 font-semibold border border-gray-500 px-4 py-2">
                   Name of Competition 1/ Alternative 1
                 </th>
-                <th className="border border-gray-500 px-4 py-2">
+                <th className="w-1/5 font-semibold border border-gray-500 px-4 py-2">
                   Name of Competition 2/ Alternative 2
                 </th>
-                <th className="border border-gray-500 px-4 py-2">
+                <th className="w-1/5 font-semibold border border-gray-500 px-4 py-2">
                   Name of Competition 3/ Alternative 3
                 </th>
-                <th className="border border-gray-500 px-4 py-2">
+                <th className="w-1/5 font-semibold border border-gray-500 px-4 py-2">
                   Your startup/ Project Name
                 </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-gray-500 px-4 py-2">
+                <td className="font-semibold border border-gray-500 px-4 py-2">
                   <p>Product or Service offering</p>
                 </td>
                 <td className="border border-gray-500 px-4 py-2">
@@ -287,7 +287,7 @@ export default function CapsuleProposal() {
                 </td>
               </tr>
               <tr>
-                <td className="border border-gray-500 px-4 py-2">
+                <td className="font-semibold border border-gray-500 px-4 py-2">
                   <p>Pricing strategy</p>
                 </td>
                 <td className="border border-gray-500 px-4 py-2">
