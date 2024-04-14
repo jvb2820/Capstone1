@@ -7,7 +7,7 @@ function TbiboardLogin() {
         <div className="bg-tanglow rounded-l-lg h-full w-642 ">
           <div className="h-full justify-center flex flex-col items-center">
             <img
-              className="min-h-72 h-110"
+              className="min-h-72 h-110 pointer-events-none"
               src="../public/images/wilBlackBox.png"
             />
           </div>

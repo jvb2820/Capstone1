@@ -128,7 +128,7 @@ export default function CapsuleProposal() {
           </div>
         </div>
       </div>
-      <div className="mt-16">
+      <div className="mt-16 overflow-x-auto">
         <p className="mb-4">
           D. Historical Timeline of the Product/Project Development
         </p>

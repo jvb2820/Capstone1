@@ -6,7 +6,7 @@ function ApplicantLogin() {
         <div className="bg-tanglow rounded-l-lg h-full w-642 ">
           <div className="flex flex-col items-center ">
             <img
-              className=" m-20 h-110"
+              className=" m-20 h-110 pointer-events-none"
               src="../public/images/wilBlackLogo.png"
             />
             <h2 className="font-primary text-black text-3xl mt-2">APPLY NOW</h2>
