@@ -4,6 +4,7 @@ import CapsuleProposal from "./CapsuleProposal";
 import AboutProposedAcceleration from "./AboutProposedAcceleration";
 import CvProjectLeader from "./CvProjectLeader";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function ApplicantForm() {
   const [isVisible, setIsVisible] = useState(false);
@@ -44,6 +45,151 @@ export default function ApplicantForm() {
       });
     }
   };
+
+  const [applicant, setApplicant] = useState({
+    email: "",
+    projectTitle: "",
+    startupProjectDescription: "",
+    teamCompositionName1: "",
+    teamCompositionRole1: "",
+    teamCompositionName2: "",
+    teamCompositionRole2: "",
+    teamCompositionName3: "",
+    teamCompositionRole3: "",
+    problemStatement: "",
+    targetMarket: "",
+    solutionDescription: "",
+    historicalDate1: "",
+    historicalKeyActivities1: "",
+    historicalDate2: "",
+    historicalKeyActivities2: "",
+    historicalDate3: "",
+    historicalKeyActivities3: "",
+    historicalDate4: "",
+    historicalKeyActivities4: "",
+    historicalDate5: "",
+    historicalKeyActivities5: "",
+    competitiveFactors_1: "",
+    nameCompetitionAlternative1_1: "",
+    nameCompetitionAlternative2_1: "",
+    nameCompetitionAlternative3_1: "",
+    startupProjectName_1: "",
+    competitiveFactors_2: "",
+    nameCompetitionAlternative1_2: "",
+    nameCompetitionAlternative2_2: "",
+    nameCompetitionAlternative3_2: "",
+    startupProjectName_2: "",
+    intellectualPropertyStatus: "",
+    objectives: "",
+    scopeProposal: "",
+    methodologyExpectedOutputs: "",
+    curriculumVitaeProjectLeader: "",
+    linksToAnySupportingMaterials: "",
+    groupName: "",
+    teamLeader: "",
+    teamsLeaderMobileNumber: "",
+    teamLeaderEmailAddress: "",
+    teamMember2: "",
+    teamMember3: "",
+    teamMember4: "",
+    teamMember5: "",
+    university: "",
+    technology: "",
+    emproductDevelopmentail: "",
+    competitiveLandscape: "",
+    productDevelopmentDesign: "",
+    team: "",
+    goToMarket: "",
+    manufacturingSupplyChain: "",
+    eligibilityAgreement: "",
+    applicantCommitmentVerification1: "",
+    applicantCommitmentVerification2: "",
+    applicantCommitmentVerification3: "",
+    applicantCommitmentVerification4: "",
+  });
+  const {
+    email,
+    projectTitle,
+    startupProjectDescription,
+    teamCompositionName1,
+    teamCompositionRole1,
+    teamCompositionName2,
+    teamCompositionRole2,
+    teamCompositionName3,
+    teamCompositionRole3,
+    problemStatement,
+    targetMarket,
+    solutionDescription,
+    historicalDate1,
+    historicalKeyActivities1,
+    historicalDate2,
+    historicalKeyActivities2,
+    historicalDate3,
+    historicalKeyActivities3,
+    historicalDate4,
+    historicalKeyActivities4,
+    historicalDate5,
+    historicalKeyActivities5,
+    competitiveFactors_1,
+    nameCompetitionAlternative1_1,
+    nameCompetitionAlternative2_1,
+    nameCompetitionAlternative3_1,
+    startupProjectName_1,
+    competitiveFactors_2,
+    nameCompetitionAlternative1_2,
+    nameCompetitionAlternative2_2,
+    nameCompetitionAlternative3_2,
+    startupProjectName_2,
+    intellectualPropertyStatus,
+    objectives,
+    scopeProposal,
+    methodologyExpectedOutputs,
+    curriculumVitaeProjectLeader,
+    linksToAnySupportingMaterials,
+    groupName,
+    teamLeader,
+    teamsLeaderMobileNumber,
+    teamLeaderEmailAddress,
+    teamMember2,
+    teamMember3,
+    teamMember4,
+    teamMember5,
+    university,
+    technology,
+    emproductDevelopmentail,
+    competitiveLandscape,
+    productDevelopmentDesign,
+    team,
+    goToMarket,
+    manufacturingSupplyChain,
+    eligibilityAgreement,
+    applicantCommitmentVerification1,
+    applicantCommitmentVerification2,
+    applicantCommitmentVerification3,
+    applicantCommitmentVerification4,
+  } = applicant;
+  const handleInputChange = (e) => {
+    setApplicant({
+      ...applicant,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const saveApplicant = async (e) => {
+    e.preventDefault();
+    await axios.post("http://localhost:8080/applicants", applicant);
+    setFormSubmitted(true);
+  };
+
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  useEffect(() => {
+    let timer;
+    if (formSubmitted) {
+      timer = setTimeout(() => {
+        setFormSubmitted(false);
+      }, 2000);
+    }
+    return () => clearTimeout(timer);
+  }, [formSubmitted]);
   return (
     <>
       <div className="bg-gradient-to-r from-formbg-dark to-formbg-light flex md:flex-row-reverse w-full">
@@ -100,190 +246,224 @@ export default function ApplicantForm() {
           className="mix-blend-overlay w-40 h-40 absolute bottom-0 left-1/2 pt-10 right-0 md:fixed pointer-events-none z-0"
         />
         <div className="w-full p-20 mt-14">
-          {/* <div className="border-4 border-red-500 bg-rose p-10 sm:p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full"> */}
-          {/* <div className="border-4 border-pink-500 w-full xl:w-9/12 bg-white mr-96"> */}
-          <div className="border rounded-lg border-black bg-white md:w-9/12  relative z-10">
-            <img
-              src="../public/images/wilBlackBox.png"
-              className="h-20 ml-auto mr-4 mt-4 pointer-events-none"
-            />
-            <div className="flex flex-col md:flex-row items-center">
+          <form onSubmit={(e) => saveApplicant(e)}>
+            {/* <div className="border-4 border-red-500 bg-rose p-10 sm:p-20 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-full"> */}
+            {/* <div className="border-4 border-pink-500 w-full xl:w-9/12 bg-white mr-96"> */}
+            <div className="border rounded-lg border-black bg-white md:w-9/12  relative z-10">
               <img
-                src="../public/images/launchlab.png"
-                className="w-64 h-20 align-middles mb-8 -mt-8 pointer-events-none"
-              ></img>
-              <h1 className="font-secondary text-black font-semibold text-2xl -mt-8 mb-6 -ml-6">
-                Registration Form
-              </h1>
-            </div>
-            <p className="font-secondary text-justify mb-8 ml-6 text-black mr-6">
-              Thank you for your interest in participating the LaunchLab Program
-              of DASIG. This program is spearheaded by CIT-U Wildcat Innovation
-              Labs. Please complete the following form to submit your capsule
-              proposal for consideration.
-              <hr className="mt-12" />
-            </p>
-            <div className="ml-6 mt-14">
-              <label
-                htmlFor="UserEmail"
-                className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
-              >
-                <h2 className="font-secondary text-black mb-6">Email</h2>
+                src="../public/images/wilBlackBox.png"
+                className="h-20 ml-auto mr-4 mt-4 pointer-events-none"
+              />
+              <div className="flex flex-col md:flex-row items-center">
+                <img
+                  src="../public/images/launchlab.png"
+                  className="w-64 h-20 align-middles mb-8 -mt-8 pointer-events-none"
+                ></img>
+                <h1 className="font-secondary text-black font-semibold text-2xl -mt-8 mb-6 -ml-6">
+                  Registration Form
+                </h1>
+              </div>
+              <p className="font-secondary text-justify mb-8 ml-6 text-black mr-6">
+                Thank you for your interest in participating the LaunchLab
+                Program of DASIG. This program is spearheaded by CIT-U Wildcat
+                Innovation Labs. Please complete the following form to submit
+                your capsule proposal for consideration.
+                <hr className="mt-12" />
+              </p>
+              <div className="ml-6 mt-14">
+                <label
+                  htmlFor="email"
+                  className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
+                >
+                  <h2 className="font-secondary text-black mb-6">Email</h2>
+                  <input
+                    onChange={(e) => handleInputChange(e)}
+                    required
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email here"
+                    className="font-secondary text-black w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-14"
+                  />
+                  <br />
+                </label>
+                <hr className="mr-6" />
+              </div>
+              <p className="font-secondary text-black text-justify mt-10 mb-8 ml-6 mr-8">
+                By accomplishing this form, the following personal information
+                will be collected including, startup team members names,
+                personal email address, mobile phone number and other relevant
+                information. The personal information you will provide in this
+                form will be used within LaunchLab Program, DASIG consortium
+                committee and will not be shared with any outside parties unless
+                you have prior written consent. Development and Acceleration
+                Support for Innovation Growth (DASIG) respects your rights as a
+                data subject under the Data Privacy Act.
+              </p>
+              <p className="font-secondary text-black text-justify mt-8 mb-8 ml-6 mr-8">
+                If you have further questions and concerns regarding the
+                processing of your personal information, you are welcome to
+                contact our team, Engr. Ralph Laviste at
+                <a
+                  href="mailto:ralph.laviste@cit.edu"
+                  className="font-semibold text-blue-700"
+                >
+                  ralph.laviste@cit.edu
+                </a>
+                and
+                <a
+                  href="mailto:rlaviste@gmail.com"
+                  className="font-semibold text-blue-700"
+                >
+                  rlaviste@gmail.com
+                </a>
+                , and Engr. Jurydel Rama at
+                <a
+                  href="mailto:jurydel.rama@cit.edu"
+                  className="font-semibold text-blue-700"
+                >
+                  jurydel.rama@cit.edu
+                </a>
+                and
+                <a
+                  href="mailto:jurydelrama@gmail.com"
+                  className="font-semibold text-blue-700"
+                >
+                  jurydelrama@gmail.com
+                </a>
+                .
+              </p>
+              <p className="font-secondary text-black text-justify mt-8 mb-8 ml-6 mr-8">
+                In compliance with the Data Privacy Act (DPA) of 2012, also
+                known as the Republic Act of 10173 (RA 10173), I agree and
+                authorize the Development and Acceleration Support for
+                Innovation Growth (DASIG) consortium members to use the personal
+                information for the purpose of LaunchLab programs and
+                initiatives. I also acknowledge and warrant that I have acquired
+                the consent from all parties relevant to this consent and hold
+                free and harmless and indemnify Development and Acceleration
+                Support for Innovation Growth (DASIG) from any complaint, suit,
+                or damages which any party may file or claim in relation to my
+                consent.
+              </p>
+              <div className="flex flex-col items-start">
+                <label className="mt-8 ml-6 mb-8 flex items-center">
+                  <input
+                    type="radio"
+                    name="radio-1"
+                    value="I AGREE"
+                    className="radio"
+                    // onChange={(e) => handleInputChange(e)}
+                  />
+                  <span className="text-black font-secondary ml-4">
+                    I AGREE
+                  </span>
+                </label>
+                <label className="ml-6 mb-8 flex items-center">
+                  <input
+                    type="radio"
+                    name="radio-1"
+                    value="I DO NOT AGREE"
+                    className="radio"
+                  />
+                  <span className="text-black font-secondary ml-4">
+                    I DO NOT AGREE
+                  </span>
+                </label>
+              </div>
+              <hr className="mt-10 mb-10 ml-6 mr-6" />
+              <div className="ml-6">
+                <label
+                  htmlFor="projectTitle"
+                  className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
+                >
+                  <h2 className="font-secondary text-black mt-16 mb-6">
+                    Project Title/Startup Name
+                  </h2>
 
-                <input
-                  type="email"
-                  id="UserEmail"
-                  placeholder="Enter your email here"
-                  className="font-secondary text-black w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-14"
-                />
+                  <input
+                    onChange={(e) => handleInputChange(e)}
+                    required
+                    type="text"
+                    id="projectTitle"
+                    name="projectTitle"
+                    placeholder="Enter your project title here"
+                    className="font-secondary text-black w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-14"
+                  />
+                  <br />
+                </label>
+              </div>
+              <div className="">
+                <div className="0" id="capsuleProposal">
+                  <CapsuleProposal />
+                </div>
                 <br />
-              </label>
-              <hr className="mr-6" />
-            </div>
-            <p className="font-secondary text-black text-justify mt-10 mb-8 ml-6 mr-8">
-              By accomplishing this form, the following personal information
-              will be collected including, startup team members names, personal
-              email address, mobile phone number and other relevant information.
-              The personal information you will provide in this form will be
-              used within LaunchLab Program, DASIG consortium committee and will
-              not be shared with any outside parties unless you have prior
-              written consent. Development and Acceleration Support for
-              Innovation Growth (DASIG) respects your rights as a data subject
-              under the Data Privacy Act.
-            </p>
-            <p className="font-secondary text-black text-justify mt-8 mb-8 ml-6 mr-8">
-              If you have further questions and concerns regarding the
-              processing of your personal information, you are welcome to
-              contact our team, Engr. Ralph Laviste at{" "}
-              <a
-                href="mailto:ralph.laviste@cit.edu"
-                className="font-semibold text-blue-700"
-              >
-                ralph.laviste@cit.edu
-              </a>{" "}
-              and{" "}
-              <a
-                href="mailto:rlaviste@gmail.com"
-                className="font-semibold text-blue-700"
-              >
-                rlaviste@gmail.com
-              </a>
-              , and Engr. Jurydel Rama at{" "}
-              <a
-                href="mailto:jurydel.rama@cit.edu"
-                className="font-semibold text-blue-700"
-              >
-                jurydel.rama@cit.edu
-              </a>{" "}
-              and{" "}
-              <a
-                href="mailto:jurydelrama@gmail.com"
-                className="font-semibold text-blue-700"
-              >
-                jurydelrama@gmail.com
-              </a>
-              .
-            </p>
-            <p className="font-secondary text-black text-justify mt-8 mb-8 ml-6 mr-8">
-              In compliance with the Data Privacy Act (DPA) of 2012, also known
-              as the Republic Act of 10173 (RA 10173), I agree and authorize the
-              Development and Acceleration Support for Innovation Growth (DASIG)
-              consortium members to use the personal information for the purpose
-              of LaunchLab programs and initiatives. I also acknowledge and
-              warrant that I have acquired the consent from all parties relevant
-              to this consent and hold free and harmless and indemnify
-              Development and Acceleration Support for Innovation Growth (DASIG)
-              from any complaint, suit, or damages which any party may file or
-              claim in relation to my consent.
-            </p>
-            <div className="flex flex-col items-start">
-              <label className="mt-8 ml-6 mb-8 flex items-center">
-                <input
-                  type="radio"
-                  name="radio-1"
-                  value="I AGREE"
-                  className="radio"
-                  checked
-                />
-                <span className="text-black font-secondary ml-4">I AGREE</span>
-              </label>
-              <label className="ml-6 mb-8 flex items-center">
-                <input
-                  type="radio"
-                  name="radio-1"
-                  value="I DO NOT AGREE"
-                  className="radio"
-                />
-                <span className="text-black font-secondary ml-4">
-                  I DO NOT AGREE
-                </span>
-              </label>
-            </div>
-            <hr className="mt-10 mb-10 ml-6 mr-6" />
-            <div className="ml-6">
-              <label
-                htmlFor="UserEmail"
-                className="relative overflow-hidden border-b border-gray-200 bg-transparent pt-3 focus-within:border-blue-600"
-              >
-                <h2 className="font-secondary text-black mt-16 mb-6">
-                  Project Title/Startup Name
-                </h2>
-
-                <input
-                  type="text"
-                  id="UserEmail"
-                  placeholder="Enter your project title here"
-                  className="font-secondary text-black w-1/4 h-8 border-none bg-transparent p-0 focus:outline-none focus:ring-0 sm:text-sm mb-14"
-                />
+                <div className="" id="aboutProposedAcceleration">
+                  <AboutProposedAcceleration />
+                </div>
                 <br />
-              </label>
-            </div>
-            <div className="">
-              <div className="0" id="capsuleProposal">
-                <CapsuleProposal />
-              </div>
-              <br />
-              <div className="" id="aboutProposedAcceleration">
-                <AboutProposedAcceleration />
-              </div>
-              <br />
-              <div className="" id="cvProjectLeader">
-                <CvProjectLeader />
-              </div>
+                <div className="" id="cvProjectLeader">
+                  <CvProjectLeader />
+                </div>
 
-              <br />
-              <div className="font-secondary text-justify text-black ml-6 mr-6">
-                <p className="mb-6">
-                  Thank you for taking the time to complete the registration. We
-                  understand and respect your concerns.
-                </p>
-                <p>
-                  If you have further questions and concerns , you are welcome
-                  to contact our project lead, Engr. Jurydel Rama, at{" "}
-                  <a
-                    href="mailto:jurydel.rama@cit.edu"
-                    className="font-semibold text-blue-700"
-                  >
-                    jurydel.rama@cit.edu
-                  </a>
-                </p>
+                <br />
+                <div className="font-secondary text-justify text-black ml-6 mr-6">
+                  <p className="mb-6">
+                    Thank you for taking the time to complete the registration.
+                    We understand and respect your concerns.
+                  </p>
+                  <p>
+                    If you have further questions and concerns , you are welcome
+                    to contact our project lead, Engr. Jurydel Rama, at
+                    <a
+                      href="mailto:jurydel.rama@cit.edu"
+                      className="font-semibold text-blue-700"
+                    >
+                      jurydel.rama@cit.edu
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div className="relative z-10 justify-end flex mt-16 mb-6 mr-6">
+                <button
+                  type="submit"
+                  className=" bg-tanglow text-black hover:bg-black hover:text-white font-secondary font-medium right-0 rounded btn-neutral border-b-2 border-black border-solid border-opacity-100 w-36 h-12 "
+                >
+                  Submit
+                </button>
               </div>
             </div>
-            <div className="relative z-10 justify-end flex mt-16 mb-6 mr-6">
-              <button className=" bg-tanglow text-black hover:bg-black hover:text-white font-secondary font-medium right-0 rounded btn-neutral border-b-2 border-black border-solid border-opacity-100 w-36 h-12 ">
-                Submit
-              </button>
-            </div>
-          </div>
 
-          <div className="flex justify-center mr-96 mt-8">
-            <div className="font-secondary text-black bottom-0">
-              Already Applied? <span className="mr-2"></span>
-              <Link to="/applicant" className="font-semibold">
-                Login
-              </Link>
+            <div className="flex justify-center mr-96 mt-8">
+              <div className="font-secondary text-black bottom-0">
+                Already Applied? <span className="mr-2"></span>
+                <Link to="/applicant" className="font-semibold">
+                  Login
+                </Link>
+              </div>
             </div>
-          </div>
+          </form>
+          {formSubmitted && (
+            <div
+              role="alert"
+              className="alert alert-success transition-opacity duration-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="stroke-current shrink-0 h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <span>Form submitted successfully!</span>
+            </div>
+          )}
         </div>
         <div className="bg-transparent text-white py-4 px-8 flex justify-end items-center fixed bottom-0 w-full z-50">
           {isVisible && (
