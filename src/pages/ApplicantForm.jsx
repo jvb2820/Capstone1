@@ -1677,7 +1677,7 @@ export default function ApplicantForm() {
                           name="eligibilityAgreement"
                           id="eligibilityAgreement"
                           className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"
-                          checked
+                          
                         />
                         <label htmlFor="eligibilityAgreement" className="ml-2">
                           I agree
@@ -1690,7 +1690,7 @@ export default function ApplicantForm() {
                           name="eligibilityAgreement"
                           id="eligibilityAgreement"
                           className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"
-                          checked
+                          
                         />
                         <label htmlFor="eligibilityAgreement" className="ml-2">
                           I do not agree
@@ -1722,7 +1722,7 @@ export default function ApplicantForm() {
                               name="applicantCommitmentVerification1"
                               id="applicantCommitmentVerification1"
                               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"
-                              checked
+                              
                             />
                             <label
                               htmlFor="applicantCommitmentVerification1"
@@ -1740,7 +1740,7 @@ export default function ApplicantForm() {
                               name="applicantCommitmentVerification1"
                               id="applicantCommitmentVerification1"
                               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"
-                              checked
+                              
                             />
                             <label
                               htmlFor="applicantCommitmentVerification1"
@@ -1765,7 +1765,7 @@ export default function ApplicantForm() {
                               name="applicantCommitmentVerification2"
                               id="applicantCommitmentVerification2"
                               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"
-                              checked
+                              
                             />
                             <label
                               htmlFor="applicantCommitmentVerification2"
@@ -1783,7 +1783,7 @@ export default function ApplicantForm() {
                               name="applicantCommitmentVerification2"
                               id="applicantCommitmentVerification2"
                               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"
-                              checked
+                              
                             />
                             <label
                               htmlFor="applicantCommitmentVerification2"
@@ -1812,7 +1812,7 @@ export default function ApplicantForm() {
                               name="applicantCommitmentVerification3"
                               id="applicantCommitmentVerification3"
                               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"
-                              checked
+                              
                             />
                             <label
                               htmlFor="applicantCommitmentVerification3"
@@ -1830,7 +1830,7 @@ export default function ApplicantForm() {
                               name="applicantCommitmentVerification3"
                               id="applicantCommitmentVerification3"
                               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"
-                              checked
+                              
                             />
                             <label
                               htmlFor="applicantCommitmentVerification3"
@@ -1855,7 +1855,7 @@ export default function ApplicantForm() {
                               name="applicantCommitmentVerification4"
                               id="applicantCommitmentVerification4"
                               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"
-                              checked
+                              
                             />
                             <label
                               htmlFor="applicantCommitmentVerification4"
@@ -1873,7 +1873,7 @@ export default function ApplicantForm() {
                               name="applicantCommitmentVerification4"
                               id="applicantCommitmentVerification4"
                               className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out"
-                              checked
+                              
                             />
                             <label
                               htmlFor="applicantCommitmentVerification4"
