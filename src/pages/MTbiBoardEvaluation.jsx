@@ -16,15 +16,15 @@ export default function MTbiBoardEvaluation() {
   }, []);
 
   // Sample data structure assuming data fetched from the backend
-  const [data, setData] = useState([
-    {
-      id: 123,
-      status: "aaa",
-      email: "email@gmail.com",
-      // Add other properties here
-    },
-    // Add more applicant objects as needed
-  ]);
+  // const [data, setData] = useState([
+  //   {
+  //     id: 123,
+  //     status: "aaa",
+  //     email: "email@gmail.com",
+  //     // Add other properties here
+  //   },
+  //   // Add more applicant objects as needed
+  // ]);
 
   // Define column titles
   // Define column titles
