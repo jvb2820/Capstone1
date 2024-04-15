@@ -12,7 +12,7 @@ export default function LandingPage() {
       <div className="md:bg-[url('../public/images/test.png')] md:bg-center md:bg-cover md:bg-local absolute md:h-560 md:min-w-full">
         <div className="flex justify-center md:flex md:justify-start">
           <img
-            className="cursor-pointer h-20 p-3 md:m-5 md:ml-20"
+            className="pointer-events-none h-20 p-3 md:m-5 md:ml-20"
             src="../public/images/wilYellowLogo.png"
           />
         </div>

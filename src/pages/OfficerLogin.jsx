@@ -7,7 +7,7 @@ function OfficerLogin() {
         <div className="bg-tanglow rounded-l-lg h-full w-642 ">
           <div className="h-full justify-center flex flex-col items-center">
             <img
-              className="min-h-72 h-110"
+              className="min-h-72 h-110 pointer-events-none"
               src="../public/images/wilBlackBox.png"
             />
           </div>
@@ -51,10 +51,7 @@ function OfficerLogin() {
             </label>
 
             <button className="hover:text-white font-secondary text-black bg-transparent h-12 w-60 mt-16 btn btn-neutral">
-              <Link
-                to="/officerdashboard"
-                className=" items-center w-full p-3"
-              >
+              <Link to="/officerdashboard" className=" items-center w-full p-3">
                 {" "}
                 Login
               </Link>
