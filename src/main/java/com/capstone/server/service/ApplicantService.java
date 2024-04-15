@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.capstone.server.entity.Applicant;
+import com.capstone.server.exception.ApplicantAlreadyExistsException;
+import com.capstone.server.exception.ApplicantNotFoundException;
 import com.capstone.server.repository.ApplicantRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -56,8 +58,6 @@ public class ApplicantService {
             ap.setHistoricalKeyActivities3(applicant.getHistoricalKeyActivities3());
             ap.setHistoricalKeyActivities4(applicant.getHistoricalKeyActivities4());
             ap.setHistoricalKeyActivities5(applicant.getHistoricalKeyActivities5());
-            ap.setCompetitiveFactors_1(applicant.getCompetitiveFactors_1());
-            ap.setCompetitiveFactors_2(applicant.getCompetitiveFactors_2());
             ap.setStartupProjectName_1(applicant.getStartupProjectName_1());
             ap.setStartupProjectName_2(applicant.getStartupProjectName_2());
             ap.setNameCompetitionAlternative1_1(applicant.getNameCompetitionAlternative1_1());

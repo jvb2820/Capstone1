@@ -1,4 +1,4 @@
-package com.capstone.server.service;
+package com.capstone.server.exception;
 
 public class ApplicantNotFoundException extends RuntimeException {
     public ApplicantNotFoundException(String message) {

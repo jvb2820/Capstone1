@@ -4,12 +4,12 @@ import org.hibernate.annotations.NaturalId;
 
 // import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 
-import jakarta.persistence.Column;
+// import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
+// import jakarta.persistence.Lob;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,11 +26,12 @@ public class Applicant {
     private Long id;
     @NaturalId(mutable = true)
     private String email;
+    private String consent;
 
     // project/ideas details
     private String projectTitle;
-    @Lob
-    @Column(name = "curriculum_vitae_project_leader", columnDefinition = "BLOB")
+    // @Lob
+    // @Column(name = "curriculum_vitae_project_leader", columnDefinition = "BLOB")
     private byte[] curriculumVitaeProjectLeader; // file
     private String linksToAnySupportingMaterials;
 
@@ -92,12 +93,10 @@ public class Applicant {
     private String historicalDate5;
     private String historicalKeyActivities5;
     // competitive advantage analysis
-    private String competitiveFactors_1;
     private String nameCompetitionAlternative1_1;
     private String nameCompetitionAlternative2_1;
     private String nameCompetitionAlternative3_1;
     private String startupProjectName_1;
-    private String competitiveFactors_2;
     private String nameCompetitionAlternative1_2;
     private String nameCompetitionAlternative2_2;
     private String nameCompetitionAlternative3_2;
