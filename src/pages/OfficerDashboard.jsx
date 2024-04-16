@@ -92,8 +92,8 @@ export default function OfficerDashboard() {
 
         {/* Apply overflow-x-scroll to the div containing the table */}
         {/* <div className="border-2 border-green-500 overflow-x-scroll w-9/12"> */}
-        <div className="w-11/12">
-          <div className="test1 rounded-t-lg">
+        <div className="w-11/12 border border-rose-500">
+          <div className="test1 rounded-t-lg h-96">
             {/* <div className="border-4 border-red-500 bg-rose-100 overflow-x-auto rounded-lg shadow w-9/12"> */}
             {/* <table className="w-full border-collapse"> */}
             {/* <table className="w-full text-left"> */}
@@ -229,12 +229,44 @@ export default function OfficerDashboard() {
                     <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                       {applicant.startupProjectDescription}
                     </td>
-                    <td className="whitespace-pre-line px-4 py-2 text-gray-700">{`${applicant.teamCompositionName1}\n${applicant.teamCompositionRole1}\n${applicant.teamCompositionName2}\n${applicant.teamCompositionRole2}\n${applicant.teamCompositionName3}\n${applicant.teamCompositionRole3}`}</td>
-                    <td className="whitespace-nowrap px-4 py-2 text-gray-700">
-                      {applicant.startupProjectDescription}
+                    <td className="whitespace-pre-line px-4 py-2 text-gray-700">
+                      {`${applicant.teamCompositionName1}
+                      \n${applicant.teamCompositionRole1}
+                      \n${applicant.teamCompositionName2}
+                      \n${applicant.teamCompositionRole2}
+                      \n${applicant.teamCompositionName3}
+                      \n${applicant.teamCompositionRole3}`}
                     </td>
-                    <td className="whitespace-pre-line px-4 py-2 text-gray-700">{`${applicant.historicalDate1}\n${applicant.historicalKeyActivities1}\n${applicant.historicalDate2}\n${applicant.historicalKeyActivities2}\n${applicant.historicalDate3}\n${applicant.historicalKeyActivities3}\n${applicant.historicalDate4}\n${applicant.historicalKeyActivities4}\n${applicant.historicalDate5}\n${applicant.historicalKeyActivities5}`}</td>
-                    <td className="whitespace-pre-line py-2 text-gray-700">{`${applicant.competitiveFactors_1}\n${applicant.nameCompetitionAlternative1_1}\n${applicant.nameCompetitionAlternative2_1}\n${applicant.nameCompetitionAlternative3_1}\n${applicant.startupProjectName_1}\n${applicant.competitiveFactors_2}\n${applicant.nameCompetitionAlternative1_2}\n${applicant.nameCompetitionAlternative2_2}\n${applicant.nameCompetitionAlternative3_2}\n${applicant.startupProjectName_2}`}</td>
+                    <td className="whitespace-nowrap px-4 py-2 text-gray-700">
+                      {`
+                        ${applicant.problemStatement}
+                      \n${applicant.targetMarket}
+                      \n${applicant.solutionDescription}`}
+                    </td>
+                    <td className="whitespace-pre-line px-4 py-2 text-gray-700">
+                      {`${applicant.historicalDate1}
+                      \n${applicant.historicalKeyActivities1}
+                      \n${applicant.historicalDate2}
+                      \n${applicant.historicalKeyActivities2}
+                      \n${applicant.historicalDate3}
+                      \n${applicant.historicalKeyActivities3}
+                      \n${applicant.historicalDate4}
+                      \n${applicant.historicalKeyActivities4}
+                      \n${applicant.historicalDate5}
+                      \n${applicant.historicalKeyActivities5}`}
+                    </td>
+                    <td className="whitespace-pre-line py-2 text-gray-700">
+                      {`${applicant.competitiveFactors_1}
+                      \n${applicant.nameCompetitionAlternative1_1}
+                      \n${applicant.nameCompetitionAlternative2_1}
+                      \n${applicant.nameCompetitionAlternative3_1}
+                      \n${applicant.startupProjectName_1}
+                      \n${applicant.competitiveFactors_2}
+                      \n${applicant.nameCompetitionAlternative1_2}
+                      \n${applicant.nameCompetitionAlternative2_2}
+                      \n${applicant.nameCompetitionAlternative3_2}
+                      \n${applicant.startupProjectName_2}`}
+                    </td>
                     <td className="whitespace-nowrap px-4 py-2 text-gray-700">
                       {applicant.intellectualPropertyStatus}
                     </td>
@@ -305,7 +337,10 @@ export default function OfficerDashboard() {
                       {applicant.eligibilityAgreement}
                     </td>
                     <td className="whitespace-pre-line px-4 py-2 text-gray-700 ">
-                      {`${applicant.applicantCommitmentVerification1}\n${applicant.applicantCommitmentVerification2}\n${applicant.applicantCommitmentVerification3}\n${applicant.applicantCommitmentVerification4}`}
+                      {`${applicant.applicantCommitmentVerification1}
+                      \n${applicant.applicantCommitmentVerification2}
+                      \n${applicant.applicantCommitmentVerification3}
+                      \n${applicant.applicantCommitmentVerification4}`}
                     </td>
 
                     {/* ))} */}
@@ -356,11 +391,10 @@ export default function OfficerDashboard() {
                           <h3 className=" text-2xl text-black ">
                             Input Feedback
                           </h3>
-                          <input
-                            type="text"
-                            placeholder="Type here"
-                            className="input input-bordered w-full max-w-xs mt-5 ml-3 bg-transparent"
-                          />
+                          <textarea
+                            className=" border-2 border-b-gray-400 resize-none textarea bg-transparent mt-3 w-full text-black overflow-hidden"
+                            placeholder="Input here"
+                          ></textarea>
                           <p className="py-4 text-lg text-black">
                             Qualified for Reapplication?
                           </p>
@@ -376,7 +410,7 @@ export default function OfficerDashboard() {
                             </label>
                           </div>
 
-                          <div className="border-2 border-rose-500 form-control w-20">
+                          <div className=" form-control w-20">
                             <label className="label content-center text-black">
                               <input
                                 type="radio"
@@ -385,6 +419,25 @@ export default function OfficerDashboard() {
                               />
                               NO
                             </label>
+                          </div>
+
+                          <div className="modal-action">
+                            <form method="dialog">
+                              {/* if there is a button in form, it will close the modal */}
+                              <button className="btn bg-transparent border-none text-black hover:bg-tanglow bg-slate-50 font-bold btn-sm">Send</button>
+                            </form>
+
+                            <div className="border-2 border-rose-500 form-control w-20">
+                              <label className="label content-center text-black">
+                                <input
+                                type="radio"
+                                name="radio-10"
+                                className="radio checked:bg-tanglow border-black"
+                                />
+                                NO
+                              </label>
+                            </div>
+                            
                           </div>
                         </div>
                       </dialog>

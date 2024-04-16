@@ -20,7 +20,7 @@ export default function ApplicantCommitmentForm() {
               type="radio"
               id="answer1"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer1" className="ml-2">
               Yes
@@ -33,7 +33,7 @@ export default function ApplicantCommitmentForm() {
               type="radio"
               id="answer1.2"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer1.2" className="ml-2">
               No
@@ -52,7 +52,7 @@ export default function ApplicantCommitmentForm() {
               type="radio"
               id="answer2.1"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer2.1" className="ml-2">
               Yes
@@ -65,7 +65,7 @@ export default function ApplicantCommitmentForm() {
               type="radio"
               id="answer2.2"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer2.2" className="ml-2">
               No
@@ -87,7 +87,7 @@ export default function ApplicantCommitmentForm() {
               type="radio"
               id="answer3.1"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer3.1" className="ml-2">
               Yes
@@ -100,7 +100,7 @@ export default function ApplicantCommitmentForm() {
               type="radio"
               id="answer3.2"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer3.2" className="ml-2">
               No
@@ -120,7 +120,7 @@ export default function ApplicantCommitmentForm() {
               type="radio"
               id="answer4.1"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer4.1" className="ml-2">
               Yes
@@ -133,7 +133,7 @@ export default function ApplicantCommitmentForm() {
               type="radio"
               id="answer4.2"
               name="answer"
-              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" checked
+              className="checked:bg-tanglow radio border-black h-4 w-4 text-black transition duration-150 ease-in-out" 
             />
             <label htmlFor="answer4.2" className="ml-2">
               No
